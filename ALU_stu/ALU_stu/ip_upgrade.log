@@ -1,0 +1,107 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu May 14 13:37:00 2026
+| Host         : DESKTOP-1Q97FT3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_vector_rom'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of test_vector_rom (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu May 14 13:37:00 2026
+| Host         : DESKTOP-1Q97FT3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_flags_and_result_rom'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of test_flags_and_result_rom (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu May 14 13:36:59 2026
+| Host         : DESKTOP-1Q97FT3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sys_clk'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of sys_clk (xilinx.com:ip:clk_wiz:6.0 (Rev. 6)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'sys_clk'.
+
+
+-Upgrade has renamed interface 'CLOCK_CLK_IN1' as 'clock_CLK_IN1' (xilinx.com:signal:clock:1.0)
+
+-Upgraded interface 'clock_CLK_IN1' (xilinx.com:signal:clock:1.0) differs from original interface ':::'
+
+-Upgrade has renamed interface 'CLOCK_CLK_OUT1' as 'clock_CLK_OUT1' (xilinx.com:signal:clock:1.0)
+
+-Upgraded interface 'clock_CLK_OUT1' (xilinx.com:signal:clock:1.0) differs from original interface ':::'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'sys_clk'. These changes may impact your design.
+
+
+-Upgrade has added port 'clk_in1'
+
+-Upgrade has added port 'clk_out1'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu May 14 13:36:57 2026
+| Host         : DESKTOP-1Q97FT3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 11)) to Vivado generation flows.
+

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  8 10:30:56 2026
+# Process ID: 12372
+# Current directory: F:/FPGA/project/Lab2_Countdown_Timer_Clean
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18892 F:\FPGA\project\Lab2_Countdown_Timer_Clean\Lab2_Countdown_Timer_Clean.xpr
+# Log file: F:/FPGA/project/Lab2_Countdown_Timer_Clean/vivado.log
+# Journal file: F:/FPGA/project/Lab2_Countdown_Timer_Clean\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/project/Lab2_Countdown_Timer_Clean/Lab2_Countdown_Timer_Clean.xpr
+update_compile_order -fileset sources_1
+save_project_as project_LED_FSM F:/FPGA/project/project_LED_FSM -force
+synth_design -rtl -rtl_skip_mlo -name rtl_1

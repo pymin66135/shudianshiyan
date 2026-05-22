@@ -1,0 +1,2127 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 15 10:18:02 2026
+# Process ID: 3968
+# Current directory: F:/FPGA/project/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5252 F:\FPGA\project\ALU\ALU.xpr
+# Log file: F:/FPGA/project/ALU/vivado.log
+# Journal file: F:/FPGA/project/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/project/ALU/ALU.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/FPGA/project/ALU/ALU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/tb_alu32_gate_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 15 10:18:23 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FAIL op=00 A=00000001 B=00000002 res=ffffffff exp=00000003 zero=1 exp=0 neg=1 exp=0
+Fatal: 
+Time: 2 ns  Iteration: 0  Process: /tb_alu32_gate/check_alu  Scope: tb_alu32_gate.check_alu  File: F:/FPGA/project/ALU/tb_alu32_gate.v Line: 82
+$finish called at time : 2 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 82
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1107.785 ; gain = 0.000
+run all
+FAIL op=00 A=ffffffff B=00000001 res=fffffffe exp=00000000 zero=1 exp=1 neg=1 exp=0
+Fatal: 
+Time: 3 ns  Iteration: 0  Process: /tb_alu32_gate/check_alu  Scope: tb_alu32_gate.check_alu  File: F:/FPGA/project/ALU/tb_alu32_gate.v Line: 82
+$finish called at time : 3 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 82
+run all
+FAIL op=00 A=7fffffff B=00000001 res=7ffffffe exp=80000000 zero=1 exp=0 neg=1 exp=1
+Fatal: 
+Time: 4 ns  Iteration: 0  Process: /tb_alu32_gate/check_alu  Scope: tb_alu32_gate.check_alu  File: F:/FPGA/project/ALU/tb_alu32_gate.v Line: 82
+$finish called at time : 4 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 82
+run all
+FAIL flags op=00 A=7fffffff B=00000001 carry=1 exp=0 borrow=0 exp=1 ovf=0 exp=1
+Fatal: 
+Time: 4 ns  Iteration: 0  Process: /tb_alu32_gate/check_alu  Scope: tb_alu32_gate.check_alu  File: F:/FPGA/project/ALU/tb_alu32_gate.v Line: 89
+$finish called at time : 4 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 89
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+ERROR: [VRFC 10-552] declarations not allowed in unnamed block [F:/FPGA/project/ALU/tb_alu32_gate.v:92]
+ERROR: [VRFC 10-2865] module 'tb_alu32_gate' ignored due to previous errors [F:/FPGA/project/ALU/tb_alu32_gate.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+WARNING: [VRFC 10-2096] empty statement in sequential block [F:/FPGA/project/ALU/tb_alu32_gate.v:104]
+ERROR: [VRFC 10-552] declarations not allowed in unnamed block [F:/FPGA/project/ALU/tb_alu32_gate.v:83]
+WARNING: [VRFC 10-2096] empty statement in sequential block [F:/FPGA/project/ALU/tb_alu32_gate.v:83]
+ERROR: [VRFC 10-2865] module 'tb_alu32_gate' ignored due to previous errors [F:/FPGA/project/ALU/tb_alu32_gate.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+ERROR: [VRFC 10-552] declarations not allowed in unnamed block [F:/FPGA/project/ALU/tb_alu32_gate.v:36]
+ERROR: [VRFC 10-2865] module 'tb_alu32_gate' ignored due to previous errors [F:/FPGA/project/ALU/tb_alu32_gate.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+ERROR: [VRFC 10-552] declarations not allowed in unnamed block [F:/FPGA/project/ALU/tb_alu32_gate.v:26]
+ERROR: [VRFC 10-2865] module 'tb_alu32_gate' ignored due to previous errors [F:/FPGA/project/ALU/tb_alu32_gate.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=7fffffff B=00000001 result=7ffffffe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=80000000 B=80000000 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=fffffffe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000008 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=00000003 B=00000005 result=00000008 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=80000001 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=7fffffff B=ffffffff result=7ffffffe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=63a1f9e3 B=58b8090b result=0ae9f0d8 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=b72a1bd4 B=261c2ff6 result=dd464bca zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=89e131c5 B=24fd62c1 result=00e120c1 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=7596f843 B=6d832ba8 result=7d97fbeb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=7db56bcd B=acc11417 result=d0f457b6 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=939f5b9f B=87969d92 result=1b35f931 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=51be76d8 B=893653e2 result=013652c0 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=7519c93a B=4f73e2a5 result=7f7bebbf zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=b5f767f9 B=08b924d9 result=ad3e4320 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=570a8037 B=07b5ded1 result=5ec05f08 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=11ef78bb B=4c244972 result=00244832 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=5729c177 B=47e6e0b4 result=57efe1f7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=54dd6e4b B=2e3441ae result=26a92c9d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=4f9cbf86 B=66cce707 result=b669a68d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=7a588b20 B=a6c680fd result=22408020 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=2eb3c7bb B=4f35f96c result=6fb7ffff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=54fac2ab B=7e508741 result=d6aa3b6a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=b602e073 B=4f534dcc result=05562e3f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=2517083e B=64b6a82e result=2416082e zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=9e894738 B=7a11caea result=fe99cffa zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=63072f70 B=548c27ab result=0e7b07c5 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=496518b6 B=081e37ae result=51835064 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=3942cfd9 B=67ee5fee result=21424fc8 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=02300298 B=1c49ff49 result=1e79ffd9 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=bc7a8799 B=4b951b4e result=70e56c4b zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=a46836f8 B=75bd5772 result=1a258e6a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=33837b3c B=26983990 result=22803910 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=920756bc B=6ffe02d5 result=ffff56fd zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=722d54df B=b66f8db4 result=bbbdc72b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=65bb5a48 B=25b0d01b result=8b6c2a63 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=5d07c744 B=77c2b104 result=55028104 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=95aed2f1 B=4f351c23 result=dfbfdef3 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=ae323eb8 B=7b6a2d39 result=32c8117f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=74e5ec3f B=0b3a05fc result=801ff23b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=732cde3d B=8a94bf30 result=02049e30 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=5a6f2220 B=a15f1cf5 result=fb7f3ef5 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=85feec69 B=4f550e5f result=36a9de0a zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=2c9922f1 B=792bcaa6 result=a5c4ed97 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=59e9cd8f B=07084511 result=01084501 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=9a8ae79b B=5fe8b9f8 result=dfeafffb zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=565d5370 B=47240a8c result=0f3948e4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=5914849e B=304720ff result=895ba59d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=4e2c4f9e B=739f6c39 result=420c4c18 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=102fdaf7 B=2489a30e result=34affbff zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=3ac376c5 B=69445f95 result=d17f1730 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=54d0c40e B=08efc663 result=5dc08a71 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=5ce3cbce B=65009f05 result=44008b04 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=ad796972 B=97a74294 result=bfff6bf6 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=4e44fe9b B=824a2d80 result=cbfad11b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=209708f7 B=2b28ca69 result=4bbfd360 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=674acc85 B=4e107269 result=46004001 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=42d00cfd B=358fcb20 result=77dfcffd zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=505a9fe9 B=636715f5 result=ecf389f4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=60b8958a B=b7a56c6f result=185e01f9 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=3177885e B=2388a287 result=21008006 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6d35378f B=81d22848 result=edf73fcf zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=06efb87c B=4dedcd19 result=b901eb63 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=b97794b7 B=b86740db result=71ded592 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=10 A=71766fa1 B=26accc46 result=20244c00 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=ba396923 B=7866281d result=fa7f693f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=749a9960 B=73b0fdda result=00e99b86 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=30cd68f8 B=66110901 result=96de71f9 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=1a5dca20 B=6b06d21b result=0a04c200 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=5e77311e B=0ef86380 result=5eff739e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=5eb7cff5 B=8f449a17 result=cf7335de zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=75096c81 B=79159a16 result=ee1f0697 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=7a4b6c32 B=53809da0 result=52000c20 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=080dfd96 B=59033c28 result=590ffdbe zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=62c537b7 B=7d176a18 result=e5adcd9f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=5218d63e B=5d10a3e9 result=af297a27 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=509807b8 B=5a26d3d4 result=50000390 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=3613e011 B=b35d3f6f result=b75fff7f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=573e3dec B=082cb64f result=4f11879d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=106de358 B=27d645a4 result=384428fc zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=62538a24 B=4681c36a result=42018220 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=5b338513 B=3991c810 result=7bb3cd13 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=4eae79b9 B=6ba1686c result=e30d114d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=61680db5 B=310203dd result=926a1192 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=b2232bd6 B=3c9b92c8 result=300302c0 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=6a93cbee B=00d1a58f result=6ad3efef zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=283cfb34 B=4bfbd9a3 result=dc412191 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=b1d3a96d B=5a60270a result=0c33d077 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=08976c6b B=9c67755b result=0807644b zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=5b31cc9a B=b0d467a0 result=fbf5efba zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=68634efe B=8d057607 result=db5dd8f7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=0b348eaa B=70fabb69 result=7c2f4a13 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a96ceb62 B=66665b44 result=20644b40 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=21cf2309 B=91d03a60 result=b1df3b69 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=736bd14b B=ad03b1b4 result=c6681f97 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=02caf5c9 B=1cd8bcad result=1fa3b276 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=136a0cf8 B=a49a18d3 result=000a08d0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=2ea8f70d B=86d5de44 result=aefdff4d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=519dca87 B=b173ecd7 result=a029ddb0 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=23ae9af1 B=6507d77f result=88b67270 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=560e05aa B=525791ff result=520601aa zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6bddb5c3 B=a7abd031 result=effff5f3 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=83cb7ed6 B=8f8c50b5 result=f43f2e21 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=0cb3a7b0 B=59d98480 result=668d2c30 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=61e3e2b4 B=78915d74 result=60814034 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=818554b1 B=65af618a result=e5af75bb zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=881dae29 B=0e38fc61 result=79e4b1c8 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=bf88e60a B=6a0190dd result=298a76e7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=06ca59d5 B=410e3abb result=000a1891 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=4fb0f267 B=0ee807fe result=4ff8f7ff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=4f47371c B=8f39d871 result=c00d5eab zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=78e998db B=561190f2 result=cefb29cd zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=5048132c B=489a8b42 result=40080300 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=64f998f0 B=1f8f4a48 result=7fffdaf8 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=57d463b3 B=5de331cc result=f9f131e7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=75a0db3a B=281c76df result=9dbd5219 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=267dbd0e B=5a9a742b result=0218340a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=47abc128 B=7e5220c2 result=7ffbe1ea zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=b87da5f7 B=3d4c9c62 result=7b310995 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=266e97a1 B=5efb6305 result=8569faa6 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=17e7108d B=6e1a58c9 result=06021089 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=5d4d83c7 B=5064b684 result=5d6db7c7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=ab66f52c B=83bc1b69 result=27aad9c3 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=af60198a B=434e05b9 result=f2ae1f43 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=71d67432 B=0cad9d51 result=00841410 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=93b2bc3e B=1d3d695e result=9fbffd7e zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=1069b8ba B=4312d5c8 result=cd56e2f2 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=608b6f18 B=82402ced result=e2cb9c05 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=4fc07319 B=743e2b56 result=44002310 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=1f7d964b B=602a2bd4 result=7f7fbfdf zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=b751011e B=00090563 result=b747fbbb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=626a58c1 B=07117437 result=697bccf8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=744730b9 B=01e7ef0c result=00472008 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=673ba00b B=2b9831d7 result=6fbbb1df zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=81f0f470 B=49a5f8cc result=384afba4 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=b2a9a60f B=76382529 result=28e1cb38 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=4b8de7d9 B=19e5461a result=09854618 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=a1d05701 B=4d7edc49 result=edfedf49 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=638b3ee7 B=5479fd10 result=0f1141d7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=43b70172 B=af1926c0 result=f2d02832 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=6e5f432a B=65875873 result=64074022 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=7c980309 B=51ea8211 result=7dfa8319 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=3a015583 B=404f047b result=f9b25108 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=0103a8d1 B=a86098ae result=a964417f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a5d65cef B=7d9babda result=259208ca zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=7a4b1abf B=5fd7b272 result=7fdfbaff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=bdeab056 B=7b4ec391 result=429becc5 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=08384b20 B=63c10d45 result=6bf95865 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=78ea6f6b B=828365e0 result=00826560 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=4398bfb7 B=36d51fc1 result=77ddbff7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=7dd22971 B=4bd10ad8 result=32011e99 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=1a962d06 B=76bc98dc result=9152c5e2 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=4e5470b8 B=5e2eecbe result=4e0460b8 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=ad91b89e B=4c269a29 result=edb7babf zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=a9fff796 B=4827e5a4 result=61d811f2 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=42e33305 B=7854684e result=bb379b53 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=2656d262 B=7074eba3 result=2054c222 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=447b0277 B=5056c9f8 result=547fcbff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=b89cd148 B=075e357c result=b13e9bcc zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=48ab3246 B=5ef3a3aa result=a79ed5f0 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=77d32120 B=0d2634bd result=05022020 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=af4a6da3 B=b06ff268 result=bf6fffeb zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=94846a3a B=77f59fe9 result=1c8eca51 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=0f639612 B=8c578b5a result=9bbb216c zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=851bd4a7 B=3eae03b5 result=040a00a5 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=bcc77dc2 B=99a03ee1 result=bde77fe3 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=b6a3a39f B=4c2b13d4 result=6a788fcb zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=a5f7ca3b B=bbbf7846 result=61b74281 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=8ad9178a B=62bf47fd result=02990788 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=555fb727 B=417cbb29 result=557fbf2f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=2eea5bd1 B=7b578162 result=b392da6f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=7d3c336f B=39c3735b result=b6ffa6ca zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=5e16c95f B=529bea96 result=5212c816 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=7b402e84 B=0d012530 result=7f412fb4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=4df36bf8 B=787c61f3 result=d5770a05 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=46c4988c B=ac0a3557 result=f2cecde3 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=4b184c89 B=4204c710 result=42004400 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=390b5a87 B=190bb881 result=390bfa87 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=ba812904 B=7fcff313 result=3ab135f1 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=4515edd8 B=0599758d result=4aaf6365 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=41d4ba24 B=7e214860 result=40000820 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=9ea52e0f B=7c55e328 result=fef5ef2f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=7df13b73 B=63bb1be7 result=1a361f8c zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=01ef58b5 B=3fc5f597 result=41b54e4c zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=61dc6447 B=209486c4 result=20940444 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=3c1bd8bf B=5fcd9fbb result=7fdfdfbf zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=844fa2ac B=be0b3175 result=c6447137 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=1f939552 B=662c06f3 result=85bf9c45 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=5e9fb839 B=5baf6e12 result=5a8f2810 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=45f9a6ae B=62ef5ae5 result=67fffeef zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=99ba9f87 B=658d3c01 result=342d6386 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=491b61d9 B=785a57c0 result=c175b999 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=413caa13 B=0f150887 result=01140803 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=5b49b2a6 B=5af7499a result=5bfffbbe zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=74a24488 B=a465147f result=d03d3009 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=5351a15a B=35deee9b result=89308ff5 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=337a1d06 B=2e9b5400 result=221a1400 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=10d63835 B=a81c618f result=b8de79bf zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=5300687f B=6427d990 result=eed88eef zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=5dfb502a B=867a8586 result=e475d5b0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=12c32d90 B=6ed18860 result=02c10800 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=ae96e715 B=65c39610 result=efd7f715 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=52f961f0 B=0c92373f result=46672ab1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=6c3e1b96 B=65bc8f80 result=d1faab16 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=7b63bf9f B=9ad502ab result=1a41028b zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=4b802590 B=4e5d218f result=4fdd259f zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=276739ea B=37be4126 result=efa8f8c4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=b419b110 B=a2caf98a result=56e4aa9a zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=10 A=529343d1 B=7f99d6a0 result=52914280 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=71281b19 B=79fa7dbc result=79fa7fbd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=b75817c7 B=2541cc29 result=92164b9e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=9cc57746 B=09eb5b98 result=a6b0d2de zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a4dba2ca B=0ded925f result=04c9824a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=03e5d954 B=5c33ba91 result=5ff7fbd5 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=b32f5e89 B=20ab509a result=92840def zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=661f1629 B=580b0153 result=be2a177c zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=ae98e2fa B=6a04ef7e result=2a00e27a zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=b43ebbe4 B=61c84183 result=f5fefbe7 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=0ab04018 B=1a5dd20d result=f0526e0b zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=b9d342d6 B=39492312 result=f31c65e8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=0462c18b B=6e11feba result=0400c08a zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=1b116495 B=8f1301a4 result=9f1365b5 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=086fd0c7 B=54e4a76b result=b38b295c zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=485c24b6 B=8cd29253 result=d52eb709 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=42f6a625 B=636d894c result=42648004 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=9be593f7 B=4b6676ed result=dbe7f7ff zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=385230b7 B=6441b8ad result=d410780a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=58390940 B=7b48d6dd result=d381e01d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=47af41f9 B=741e9d37 result=440e0131 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=46af4dca B=800172b1 result=c6af7ffb zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=586055e4 B=9ee8570a result=b977feda zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=7b4a498e B=a00f97de result=1b59e16c zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=9306f441 B=41f99758 result=01009440 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=a0110a8f B=6b674a25 result=eb774aaf zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=60e1ee62 B=9b5b541d result=c5869a45 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=0b76e203 B=73e8e2a3 result=7f5fc4a6 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=5d54eb75 B=2b87ec92 result=0904e810 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=5f502cc8 B=be36d9d7 result=ff76fddf zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=46e340af B=6ac70ecc result=dc1c31e3 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=b21fbc7a B=24382c24 result=d657e89e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=164efb5e B=116fe942 result=104ee942 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=626f05fb B=5d323c0e result=7f7f3dff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=7c36f80e B=148ec275 result=67a83599 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=016a6832 B=9285f36d result=93f05b9f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a5feabb8 B=63d96e2e result=21d82a28 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=6fb82f7b B=2235a3c6 result=6fbdafff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=786830a3 B=712297ad result=074598f6 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=34bb9733 B=1e66dc5b result=5322738e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=54fc05db B=2473c6ae result=0470048a zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=409c8022 B=4d64367f result=4dfcb67f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=95965e5c B=75581755 result=203e4707 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=6bcb12da B=6a926437 result=d65d7711 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=99cbde04 B=2c6792fc result=08439204 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=37f69ab6 B=af623c60 result=bff6bef6 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=a1bfaa52 B=a3c1ad91 result=fdfdfcc1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=19f4a097 B=bb8b8856 result=d58028ed zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=5029408d B=51eb3b4e result=5029000c zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=6aedc4b6 B=71e8eadf result=7bedeeff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=75ace8df B=04e2654d result=70ca8392 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=2d747335 B=45d6296c result=734a9ca1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=56cda09b B=186237eb result=1040208b zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=b7bf144c B=4c7a897a result=ffff9d7e zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=9d449d39 B=65338781 result=381115b8 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=9250b2e7 B=74123dd4 result=0662f0bb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=7d95bf6d B=4a0fc733 result=48058721 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=408cc74f B=9ada5ca6 result=dadedfef zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=2f434eb4 B=52dd7a36 result=dc65d47e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=0eec9a7a B=2cd90e21 result=3bc5a89b zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=9ced4169 B=4f7961c9 result=0c694149 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=47b36ac7 B=4c30901d result=4fb3fadf zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=2256dbff B=56a00542 result=cbb6d6bd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=79099e3f B=3f441d68 result=b84dbba7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=2619670b B=40bd0906 result=00190102 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=8b74ad86 B=4870430b result=cb74ef8f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=175d0e48 B=847e4bc5 result=92dec283 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=07b46073 B=bd767554 result=c52ad5c7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=453b54cb B=13290df9 result=012904c9 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=85e6b85f B=5c986314 result=ddfefb5f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=17a759be B=0d9b18d2 result=0a0c40ec zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=9a0ed868 B=5ce2ae8a result=f6f186f2 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a0c426cc B=9ff590c7 result=80c400c4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=b97b119e B=386b808a result=b97b919e zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=2d90a999 B=5389ea06 result=da06bf93 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=154e2f14 B=4e54d065 result=63a2ff79 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=737f7acd B=4ec940b2 result=42494080 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=86c050f0 B=21102466 result=a7d074f6 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=22532ab8 B=1c0e8004 result=0644aab4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=6f64f4cc B=15d2a585 result=85379a51 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=6ad7c0b7 B=762545bc result=620540b4 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=b6e2c9ec B=0d2aeb6f result=bfeaebef zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=1233c5c0 B=a647beb8 result=6bec0708 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=a2fd90f5 B=7d0b8677 result=2009176c zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=9c6d0474 B=59e05ae1 result=18600060 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=8a3671e7 B=2ea0ca34 result=aeb6fbf7 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=80281999 B=ad3402dc result=d2f416bd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=abac50ac B=9c951e0d result=48416eb9 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=87145dbd B=b5e2c293 result=85004091 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=4b35e841 B=873c7756 result=cf3dff57 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=6316c56f B=76e238ed result=ec348c82 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=a3d19563 B=6a2b232c result=0dfcb88f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=2cc4fb80 B=6f077da4 result=2c047980 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=71679a82 B=0fdbc0ef result=7fffdaef zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=65e9b692 B=95392fe5 result=d0b086ad zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=7a06e41b B=12aeb212 result=8cb5962d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=0440ad89 B=6b6e7e9d result=00402c89 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=a28a7302 B=6a2a641b result=eaaa771b zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=00a7ae82 B=1c91571d result=e4165765 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=7cd9162e B=84e85c0c result=01c1723a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=87ffd5bb B=9f638930 result=87638130 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=6f12c027 B=08a7843d result=6fb7c43f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=3bf4e04d B=6bebd655 result=d00909f8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=0d8fe049 B=43f4b608 result=51849651 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=0b4f5f85 B=7ca2a071 result=08020001 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=4c9c3a46 B=47443fd3 result=4fdc3fd7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=688e76c6 B=5a2c1a8f result=0e625c37 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=0b38f5db B=73ddd64c result=7f16cc27 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=56cebb00 B=57d53021 result=56c43000 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=bb22161f B=bf5d31c7 result=bf7f37df zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=b2014ab1 B=465b0bfa result=6ba63eb7 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=b33b0813 B=08d005b1 result=bc0b0dc4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=9e303c1c B=6e5d1e32 result=0e101c10 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=482d3778 B=503186cd result=583db7fd zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=34b82a2c B=7b683f8b result=b94feaa1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=59018c7e B=52e86648 result=abe9f2c6 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=69c55dbd B=a12ec3f7 result=210441b5 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=2319ed15 B=9e7d87ea result=bf7defff zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=1c970382 B=7c1b7994 result=a07b89ee zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=7165ee32 B=865c6140 result=f7c24f72 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=9d4a3d8b B=947fdb48 result=944a1908 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=a4d9e92a B=39e1410d result=bdf9e92f zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=909b54dc B=163fd75c result=7a5b7d80 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=403da24d B=ade59267 result=ee2334b4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=2abfb2a4 B=65178b77 result=20178224 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=67c6d374 B=3b5b0780 result=7fdfd7f4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=7b5762d4 B=a80475c2 result=d352ed12 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=694099e7 B=26171578 result=8f57af5f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=0d1c0139 B=51076d5c result=01040118 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=61721cf9 B=0873640d result=69737cfd zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=790be31e B=4ab2b6e0 result=2e592c3e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=ae8a7986 B=0627e457 result=b4b25ddd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=1bba243c B=8ffc967f result=0bb8043c zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=8e9b4865 B=14c6075a result=9edf4f7f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=5aaf4d5f B=bd25c1eb result=9d898b74 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=9aedebb2 B=7669719c result=11575d4e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=4d22586a B=a9893417 result=09001002 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=0b2f78f6 B=27d1a5c9 result=2ffffdff zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=66aef602 B=261d64a8 result=4091915a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=1e3b1765 B=b3d14e6c result=d20c65d1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=4fa698bf B=a96a905c result=0922901c zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=5ba2f435 B=36558ec1 result=7ff7fef5 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=4f87f504 B=79de0b9b result=d5a9e969 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=6a26dd2d B=9f2e8dc4 result=09556af1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=a3489bf7 B=45c9d163 result=01489163 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=55841c85 B=72d090fb result=77d49cff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=bfa7dcfe B=bfaaf9b3 result=fffce34b zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=11ff1ebf B=62f078f5 result=74ef97b4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=8574cb16 B=67833b45 result=05000b04 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=55c109f0 B=451ca814 result=55dda9f4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=a72e34f8 B=67c028b0 result=3f6e0c48 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=a80d2109 B=aca3000e result=54b02117 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=10 A=4f4363f5 B=7dce2af9 result=4d4222f1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=71bfa822 B=767198ed result=77ffb8ef zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=658e53a9 B=99ccc92b result=cbc18a7e zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=a31498fb B=34d1b79e result=d7e65099 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=179af424 B=94d4411d result=14904004 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=2b43508b B=7d2947ce result=7f6b57cf zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=aea10a48 B=4e57e986 result=604920c2 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=31faff6c B=463bfe6c result=7836fdd8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=632c2aa3 B=5d3e4ff8 result=412c0aa0 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=4365463a B=11cd34eb result=53ed76fb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=2b96397e B=756045a7 result=b635f3d7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=58093358 B=8ec26422 result=e6cb977a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=529e959f B=1b6e7992 result=120e1192 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=208f990d B=7e34cf1d result=7ebfdf1d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=10cebf39 B=7898cc65 result=9835f2d4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=0cf7333f B=636d54d8 result=70648817 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=940745f8 B=ad86cc4d result=84064448 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=61a223f6 B=24d60531 result=65f627f7 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=261f98b2 B=6e995735 result=b786417d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=88435a0a B=3a26deaa result=c26a38b4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=1c202382 B=69e57e00 result=08202200 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=5efce3dc B=423fbc35 result=5efffffd zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=587ed535 B=67403de6 result=f13e974f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=7c669adf B=749ef8b8 result=f1059397 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=5125bbe6 B=5b637ebb result=51213aa2 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=b6deb4ed B=29a4911b result=bffeb5ff zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=42a3bca1 B=33454fcc result=0f5e6cd5 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=1e4389d3 B=13c97887 result=320d025a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=8ea8ce88 B=55223ec0 result=04200e80 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=bd6e09a3 B=514c8b29 result=fd6e8bab zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=88678e8d B=5bb19376 result=2cb5fb17 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=651603b1 B=97105d15 result=fc2660c6 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=b0d3d237 B=a2840d54 result=a0800014 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=685ce83e B=b93b60c4 result=f97fe8fe zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=7e35a0ca B=4d72ebef result=30c2b4db zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=504bbdd9 B=2f097301 result=7f5530da zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=6ff6f943 B=38a8a617 result=28a0a003 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=6844d3c5 B=6e2c9a0e result=6e6cdbcf zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=861b9207 B=3890919e result=4d8b0069 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=1d360d0f B=76128b4a result=93489859 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=713937b6 B=857ae0d5 result=01382094 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=643f2558 B=7754c9bd result=777fedfd zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=3e0b7273 B=81753268 result=bc96400b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=6d675507 B=2f44aa29 result=9cabff30 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=86f0133d B=51a67a60 result=00a01220 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=269973e6 B=44fb85b0 result=66fbf7f6 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=531bacc8 B=9400c8ee result=bf1ae3da zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=74402fda B=5a0bc005 result=ce4befdf zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=65a7434e B=1ad9a3c0 result=00810340 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=1f0745b5 B=b8c2f016 result=bfc7f5b7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=2eda6cae B=1347758f result=1b92f71f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=92ceb01b B=1481affc result=a7506017 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=ae211950 B=31d5f5d0 result=20011150 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=4d44a012 B=5cfb85fe result=5dffa5fe zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=451d6b60 B=6013502d result=e50a1b33 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=717d35fb B=733e84b0 result=e4bbbaab zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=91e945fe B=3ec1d60d result=10c1440c zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=503a0aae B=5706b15e result=573ebbfe zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=9ed5263b B=41b740a9 result=5d1de592 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=4a45360e B=b0be6c39 result=fb03a247 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=807916b7 B=1a7f40bc result=007900b4 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=87c51d97 B=9f4e3cf2 result=9fcf3df7 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=5c368166 B=520a53a5 result=0a2c2dc1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=500ca92b B=5caf981d result=acbc4148 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=6c899461 B=57d1c6c2 result=44818440 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=7bfdd50f B=48c015c7 result=7bfdd5cf zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=a9dc1a67 B=4c0a7e3a result=5dd19c2d zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=256fade4 B=1665aec8 result=3bd55cac zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=a3dc44fc B=216d82f3 result=214c00f0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=5f25c490 B=4db85f63 result=5fbddff3 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=6d78012d B=04957274 result=68e28eb9 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=641e0e2b B=11544629 result=75725454 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=a602f568 B=4343d2bb result=0202d028 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=5f0ca58c B=137af695 result=5f7ef79d zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=47d94530 B=432ab3b8 result=04ae9178 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=a4cf3cbf B=6ddc3a98 result=12ab7757 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=066e8673 B=03dbe24b result=024a8243 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=0157312d B=4e47cba3 result=4f57fbaf zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=47069603 B=26266dec result=20e02817 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=3c24063b B=4d751c77 result=899922b2 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=aa025038 B=bd7b3769 result=a8021028 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=1bbce81a B=7108e63b result=7bbcee3b zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=63a1a555 B=57e0ee56 result=0bc0b6ff zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=3e7e02b2 B=0da3f58d result=4c21f83f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=955c25bf B=5a3aeacd result=1018208d zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=7eacdbc9 B=78fdcb14 result=7efddbdd zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=b21bd923 B=3d2ade7b result=74f0faa8 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=86a1c0a2 B=4777fee2 result=ce19bf84 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=1765c948 B=854e9c6b result=05448848 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=4075c9f6 B=4981a26b result=49f5ebff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=42797ae6 B=47178a98 result=fb61f04e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=10f9a14d B=59df442f result=6ad8e57c zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=4c662703 B=516f6b44 result=40662300 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=2360e69a B=8edfa1ea result=afffe7fa zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=1886f5dc B=b45a87e8 result=642c6df4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=68bee619 B=64ed1ce0 result=cdac02f9 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=85c9f32c B=0c1fccb3 result=0409c020 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=73ccbeca B=1e50e908 result=7fdcffca zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=407a549b B=5c8ba4e3 result=e3eeafb8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=033e05e8 B=464447c7 result=49824daf zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=68ab7196 B=770ac4b2 result=600a4092 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=649530d0 B=a925c632 result=edb5f6f2 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=53966995 B=67d336b8 result=ebc332dd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=6f6a0df9 B=bc41db2c result=2babe925 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=5eddfb6b B=53ff3ec9 result=52dd3a49 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6567a15e B=32746500 result=7777e55e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=bbd27582 B=54d1af57 result=6700c62b zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=6eb6402c B=9ab070ed result=0966b119 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=a8d0ee21 B=541de18a result=0010e000 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=4d24d5ed B=64a363a3 result=6da7f7ef zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=a8ef90e2 B=bbdb161a result=ed147ac8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=7f53d490 B=51c07f03 result=d1145393 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=0ff8f7a4 B=4c78aa7d result=0c78a224 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=b663e2a6 B=38e88886 result=beebeaa6 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=0853c097 B=b5b7b736 result=529c0961 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=0aa90789 B=984cb83c result=a2f5bfc5 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=023061b3 B=410cea2f result=00006023 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=513540c2 B=8a84224b result=dbb562cb zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=76c4a165 B=5bde484c result=1ae65919 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=a2d0da87 B=78f50319 result=1bc5dda0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=1ceb327b B=74061b49 result=14021249 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=83792564 B=93afd3e1 result=93fff7e5 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=4fe46395 B=a649ffeb result=a99a63aa zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=8ca4d6fa B=6ccf9611 result=f9746d0b zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=1a501b34 B=901dfc5e result=10101814 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=807f69f2 B=6a347eca result=ea7f7ffa zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=b667fc49 B=8d2440ec result=2943bb5d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=570414db B=50b8177d result=a7bc2c58 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=9d423d4a B=57837ecd result=15023c48 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=3aec9647 B=53aa3993 result=7beebfd7 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=64a7bfb9 B=11f0ab22 result=52b71497 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=24625110 B=81e9fd03 result=a64c4e13 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=697429ef B=5f4ee758 result=49442148 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=55943696 B=4e1be9a8 result=5f9fffbe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=713f927a B=79f687a6 result=f7490ad4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=5005e6ab B=5ab3bc6a result=aab9a315 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=59456efe B=259a1d41 result=01000c40 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=28cfa612 B=4a850179 result=6acfa77b zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=9f90a4e8 B=78d58cbe result=26bb182a zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=a538bde3 B=78d613e6 result=1e0ed1c9 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=1e6fa9ff B=4e0863f5 result=0e0821f5 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=435b155f B=3e004ee7 result=7f5b5fff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=46ddf0b3 B=6893d342 result=de4a1d71 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=b6d662ce B=654d9ab3 result=1c23fd81 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=b69c3738 B=7a31782d result=32103028 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=234de99a B=7d7a27eb result=7f7feffb zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=62c54b70 B=5a244c68 result=08a0ff08 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=62c7c29e B=996182a8 result=fc294546 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=5455c496 B=8615ac39 result=04158410 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=16dbaa93 B=b71b1006 result=b7dbba97 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=6039f8a1 B=79a36d32 result=e6968b6f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=507c92ae B=348fbd37 result=850c4fe5 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=7fb9196b B=67583d41 result=67181941 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6baacd3d B=5ff3120c result=7ffbdf3d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=60fbaa73 B=3c275feb result=24d44a88 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=9482cf44 B=60b4c3de result=f5379322 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a37f9d2d B=002d9c81 result=002d9c01 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=40a7d5eb B=047b47a0 result=44ffd7eb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=bc54fc6d B=552aa52f result=672a573e zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=65300b7f B=5fd4999a result=c504a519 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=555841b0 B=a5d7e16a result=05504120 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=644fe13a B=11ad3e1d result=75efff3f zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=7b028699 B=497fecb9 result=318299e0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=7181d7b7 B=505ac849 result=c1dca000 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=6f57ce23 B=55d1b8f2 result=45518822 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=62080667 B=6a5a54bc result=6a5a56ff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=1f51a5ab B=5389de1e result=cbc7c78d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=bab51d06 B=8ea973cf result=495e90d5 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=295b9710 B=9cbd236d result=08190300 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=7903c88b B=48ad3cbc result=79affcbf zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=7047018b B=33b8e591 result=3c8e1bfa zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=5756b08b B=99a2989c result=f0f94927 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=507608fe B=505a7916 result=50520816 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=624fd558 B=40bd0a8a result=62ffdfda zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=84135ea8 B=b9a685e3 result=ca6cd8c5 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=5a5fa326 B=548967a6 result=aee90acc zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=0a00fef9 B=bcaf787e result=08007878 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=15467230 B=0e145da1 result=1f567fb1 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=7655fe61 B=6fa61556 result=06afe90b zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=629dc548 B=0056fd5a result=62f4c2a2 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=2c558dd4 B=77e43778 result=24440550 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=8e6b5afc B=22ab8c35 result=aeebdefd zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=678a4ccf B=71092044 result=f6812c8b zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=a3028990 B=13dfdaa3 result=b6e26433 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=68ed57bc B=b16de48c result=206d448c zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=b68b66d9 B=5077a48b result=f6ffe6db zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=a27704d0 B=598df069 result=48e91467 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=64577f2f B=0b645c8c result=6fbbdbbb zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=8afbd4f5 B=9ae2e608 result=8ae2c400 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=5bdc0118 B=ad72d9c5 result=fffed9dd zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=7470d671 B=40338047 result=343d562a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=38d73651 B=7f6cab66 result=b843e1b7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=5b16664f B=14b33769 result=10122649 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=acdf852b B=4f873cc0 result=efdfbdeb zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=54e6b7b0 B=65b6bb7c result=ef2ffc34 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=4ef3e826 B=2ffd1dff result=7ef10625 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=7a69f2e6 B=7bd36d51 result=7a416040 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=7f845abf B=4f50aa96 result=7fd4fabf zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=618a28cd B=4e7842e5 result=1311e5e8 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=7f4dc896 B=5bf41bb3 result=db41e449 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=4a4bb036 B=7ed22355 result=4a422014 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=ab44c64a B=abd5d904 result=abd5df4e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=4d4a663b B=aa928ee0 result=a2b7d75b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=07c9f4b7 B=17961671 result=1f600b28 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=2964b235 B=330ebb01 result=2104b201 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=436bef75 B=76af1870 result=77efff75 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=5da149e1 B=4b35e42d result=126b65b4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=8e452ee2 B=8705fc17 result=154b2af9 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=7e449f2e B=51b11e57 result=50001e06 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=7db51487 B=5be5e910 result=7ff5fd97 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=1ce70284 B=0bfa4369 result=10ecbf1b zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=62ebe527 B=9b2ba1b3 result=fe1786da zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=5dab61c1 B=60a0f9ae result=40a06180 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=77118ac3 B=7a926445 result=7f93eec7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=6c9b3d18 B=59fd6fea result=129dcd2e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=15be05f8 B=4a469ed9 result=6004a4d1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=3a9e6998 B=0ccf90bb result=088e0098 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=44d9031e B=2739a6b0 result=67f9a7be zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=66cd00a5 B=5a970917 result=0c35f78e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=71804589 B=a16b6a3e result=12ebafc7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=676699d2 B=b65948a8 result=26400880 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=48a510ee B=4e339a78 result=4eb79afe zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=90f051bf B=ba255678 result=d6cafb47 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=6f9f04b6 B=7856eb91 result=e7f5f047 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=707e9f20 B=384415a4 result=30441520 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=468a8609 B=816ef0df result=c7eef6df zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=72696c1c B=36298abf result=3c3fe15d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=79c5dc70 B=62e80b3c result=dcade7ac zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=6e6da064 B=4050627a result=40402060 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6456fc1b B=60d70c80 result=64d7fc9b zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=7679ed39 B=5e1cd88c result=185d14ad zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=43bf17bd B=64e78d9d result=a8a6a55a zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=9e6d3b06 B=281613d8 result=08041300 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=45be9a1e B=14e7283f result=55ffba3f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=0632ec64 B=897db1db result=7cb53a89 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=79ceb5dd B=24a0276a result=9e6edd47 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=3193c5b3 B=bf8d4ffb result=318145b3 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=b9874faa B=b7c6b218 result=bfc7ffba zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=490b01d6 B=b3560587 result=95b4fc4f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=5c66d982 B=7a9ec789 result=d705a10b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=72e35582 B=15ee292c result=10e20100 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=326579a1 B=bbee5758 result=bbef7ff9 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=49442eb3 B=8ecc5324 result=ba77db8f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=368d1ee1 B=3c278435 result=72b4a316 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=24ba7c50 B=68f29883 result=20b21800 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=7815db8d B=6dfeab04 result=7dfffb8d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=77beeba7 B=aea2fa6f result=c91bf138 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=2a262f39 B=1c7967f7 result=469f9730 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=979592f2 B=a23c0ac7 result=821402c2 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=0a7812fb B=8f547e99 result=8f7c7efb zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=50df0536 B=b49e4235 result=9c40c301 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=2bcde690 B=68749828 result=94427eb8 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=56da4cfc B=b645f98c result=1640488c zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=77c916c1 B=a7b95232 result=f7f956f3 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=6ae43bc1 B=2396fd51 result=474d3e70 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=902dea5a B=41be88bd result=d1ec7317 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=59dcf6dd B=87f7011b result=01d40019 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=6977daef B=44c1329e result=6df7faff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=2b8dfe6c B=79a5c549 result=b1e83923 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=067fbb5b B=856af54a result=8beab0a5 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=819cc664 B=6ff7964a result=01948640 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=4a2c27e8 B=2d2ac4d0 result=6f2ee7f8 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=699d5b93 B=50abe344 result=18f1784f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=3295ba1a B=6b3a21f7 result=9dcfdc11 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=40a3798e B=7cc1e203 result=40816002 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=9864e6c8 B=aa40d522 result=ba64f7ea zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=4d6dc547 B=4afaa0e2 result=02732465 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=157af719 B=0e113ed5 result=238c35ee zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=47bc82e5 B=2ddfdde1 result=059c80e1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=385213f7 B=152a482c result=3d7a5bff zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=78da7ec4 B=4dcd0b11 result=2b0d73b3 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=a33b8702 B=409701a9 result=e3d288ab zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=7bace8f2 B=5b8d9af9 result=5b8c88f0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=55c149d6 B=748767b6 result=75c76ff6 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=295aa60a B=78fcd0d8 result=b05dd532 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=b51e6960 B=a5078efd result=5a25f85d zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=548a6bd1 B=8adfb336 result=008a2310 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=198ef6b3 B=7de511dc result=7deff7ff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=83dc840e B=4ead6013 result=352f23fb zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=a2eca0d9 B=5866efdf result=fb5390b8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=598d1349 B=3c7b978c result=18091308 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=564c01bb B=5d699757 result=5f6d97ff zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=8b28f7a0 B=7938a294 result=11f0550c zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=b5d08737 B=64b60ae9 result=1a869220 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=b5b43a21 B=0c1c88f2 result=04140820 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=421fa241 B=40dd31c1 result=42dfb3c1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=85552b87 B=77f02978 result=0d65020f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=25933caa B=bb0965a8 result=e09ca252 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=040cb26a B=67b2deeb result=0400926a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=7be69769 B=0961ddf1 result=7be7dff9 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=5fa30863 B=2179d413 result=3e293450 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=446b4399 B=63afbace result=a81afe67 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=892cb2ff B=4051db02 result=00009202 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=6d1198bf B=68cfbb62 result=6ddfbbff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=61cbaf16 B=b17cdc59 result=b04ed2bd zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=4c7f7630 B=6af86215 result=b777d845 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=71ceb75b B=b9910ef0 result=31800650 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=53c81d77 B=539a6671 result=53da7f77 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=6b0deb49 B=a04793a8 result=cac657a1 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=3e92c886 B=5cdca2a4 result=9b6f6b2a zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=59d8a298 B=925ae5fe result=1058a098 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=b0770916 B=44e68de1 result=f4f78df7 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=b2a279a6 B=6f09d19c result=4398a80a zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=21c33085 B=8c7b1c3e result=ae3e4cc3 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=0164b79a B=523a399b result=0020319a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=5161aa1f B=34073140 result=7567bb5f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=41440b38 B=7324daa4 result=ce1f3094 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=40824d7e B=42a8c2d2 result=832b1050 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=455f1440 B=11e3f79d result=01431400 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=76aff413 B=86a31f78 result=f6afff7b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=8508d242 B=37324191 result=4dd690b1 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=494be24a B=4a67e682 result=93b3c8cc zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=4916392f B=3ffbd65d result=0912100d zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=510b05fa B=4e1f0b71 result=5f1f0ffb zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=772e17ef B=1a56e844 result=5cd72fab zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=9886f1f3 B=4044511e result=d8cb4311 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=5a52bea2 B=6991f7ed result=4810b6a0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=8e635c8f B=5180d691 result=dfe3de9f zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=03e8e031 B=a6ea4e82 result=5cfe91af zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=91c527af B=5e3b9ed3 result=f000c682 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=907c466f B=a028843e result=8028042e zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=2fbc7564 B=146526a0 result=3ffd77e4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=4712d2c0 B=41819d13 result=059135ad zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=72a0c574 B=578f192f result=ca2fdea3 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=61aa2151 B=225d3ad8 result=20082050 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=6bf43fcf B=28bcf411 result=6bfcffdf zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=63ded7ec B=5e950543 result=0549d2a9 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=004c0d40 B=4588f93d result=45d5067d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=80f2401c B=6c404d10 result=00404010 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=6e45ed4f B=64d11808 result=6ed5fd4f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=4ad55253 B=6e91fa8f result=dc4357c4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=2a5a1145 B=4bc7926f result=7621a3b4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=5ad2479f B=189ffe94 result=18924694 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=3098aa77 B=a5a799f3 result=b5bfbbf7 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=8731f924 B=5af2bbbd result=2c3f3d67 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=716f2c62 B=620440c3 result=d3736d25 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=7392ba51 B=a207d6da result=22029250 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=07abdab6 B=7ac4b375 result=7feffbf7 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=7cfa9297 B=791b0719 result=03df8b7e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=5cc8f439 B=708d4ce8 result=cd564121 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=9b22ddf3 B=6474ceef result=0020cce3 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=6b52005e B=981d708a result=fb5f70de zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=5d8fd608 B=481af497 result=1574e171 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=08aabd72 B=78b2b3fb result=815d716d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=2c8fc386 B=73fcbdd0 result=208c8180 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=10d02485 B=8a1f998f result=9adfbd8f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=3c17b267 B=997ae1f8 result=a29cd06f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=02d24d8a B=68a775ee result=6b79c378 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=0d779fc8 B=93a27210 result=01221200 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=72c70f7d B=498f5230 result=7bcf5f7d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=ad1d5408 B=75995d07 result=3783f701 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=b236c81e B=3a94f3d0 result=eccbbbee zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=093bcf17 B=a4fdd79b result=0039c713 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=04244600 B=3659231f result=367d671f zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=1a9734a2 B=365b0e1e result=e43c2684 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=70ee16f0 B=a3d303ba result=14c11aaa zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=5b58e5b9 B=75125cf0 result=511044b0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=5a2c26d9 B=75f01a5c result=7ffc3edd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=ab6d6b0f B=4b1a3dc9 result=60532d46 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=99c31e16 B=06c650c8 result=a0896ede zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=402c9aba B=73ef44ef result=402c00aa zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=7cb66b24 B=6b9a05c9 result=7fbe6fed zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=bf0982b9 B=1679893a result=a88ff97f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=72605691 B=7f361d73 result=f1967404 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=8a68ce2a B=6f16c1b6 result=0a00c022 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=6ad0233c B=497250e3 result=6bf273ff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=05904af0 B=5d3079cd result=a85fd123 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=48a86e56 B=0ff9191a result=58a18770 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=4c473b83 B=b3789192 result=00401182 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=596b69fd B=51d78674 result=59ffeffd zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=10a90b5f B=2213d853 result=ee95330c zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=61d09f8e B=5cf046e3 result=bec0e671 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=558c69e5 B=bb3c098c result=110c0984 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=aec7cd57 B=66357545 result=eef7fd57 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=5d4fe1df B=10986ce5 result=4cb774fa zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=4325bc28 B=b2dc4bc5 result=f60207ed zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=4bd47671 B=71ed897f result=41c40071 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=9911c10a B=a9245851 result=b935d95b zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=0285f664 B=5c377d32 result=a64e7932 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=5c00a416 B=4e5a6cd6 result=aa5b10ec zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=4e2506b1 B=75126520 result=44000420 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=777ec527 B=50aafd15 result=77fefd37 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=5149e252 B=537f693d result=fdca7915 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=1f0569eb B=9f6ee903 result=be7452ee zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=4891ce5d B=16842f12 result=00800e10 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=7019e618 B=99dbb0af result=f9dbf6bf zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=6a03984f B=8f1f5004 result=dae4484b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=b94a99b2 B=329566ac result=ebe0005e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=25a37f16 B=29647fca result=21207f02 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=4c71175b B=8fa71766 result=cff7177f zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=3883cfce B=05bbb10d result=32c81ec1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=423c7e12 B=5e274ee5 result=a063ccf7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=af2030d8 B=8ead956e result=8e201048 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6dce664b B=67a400a6 result=6fee66ef zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=1469467b B=300ae45d result=e45e621e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=45cb4f8b B=43897753 result=8954c6de zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=3eb879cb B=3399b5d6 result=329831c2 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=ab2d77fa B=5321c047 result=fb2df7ff zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=63a49a34 B=70f8c785 result=f2abd2af zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=16ab379a B=225d13ff result=39084b99 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=a4927d5c B=41d8af94 result=00902d14 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=757ed446 B=88371790 result=fd7fd7d6 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=b2d1771a B=8c2a0be1 result=26a76b39 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=2a942b8f B=5763f476 result=81f82005 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=4e02bb75 B=a012ffd6 result=0002bb54 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=5f9b0c06 B=00d4328f result=5fdf3e8f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=ac3d0bb7 B=0a2f3795 result=a20dd422 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=58382705 B=7a3fc72c result=d277ee31 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=2a42376b B=37d3330b result=2242330b zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=7b13f9bc B=567f4322 result=7f7ffbbe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=42026aa1 B=534c20c1 result=eeb649e0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=50bf0a4f B=6c44a20c result=bd03ac5b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=8b1f53cd B=4bd3040b result=0b130009 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=42c3e52f B=4d21be6e result=4fe3ff6f zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=1f1f24cc B=9382ef7e result=8b9c354e zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=3966607a B=2a3e7899 result=63a4d913 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=5f55f389 B=7c2a45a9 result=5c004189 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=77603707 B=7e751855 result=7f753f57 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=0fad3527 B=b0c69782 result=5ee69da5 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=a8b390ef B=6f0328b0 result=17b6b99f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=2cf0dd2b B=2013c7f6 result=2010c522 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=6d784106 B=bc9e1253 result=fdfe5357 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=50da5f78 B=962bd1f5 result=baae8d83 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=2ba13b03 B=7dcb3ca4 result=a96c77a7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=363f99eb B=19197c09 result=10191809 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=ba694ef7 B=8719f964 result=bf79fff7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=2f454dfe B=660a89fa result=c93ac404 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=84e53608 B=6584e7ea result=ea6a1df2 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=7f240604 B=bf4e84ff result=3f040404 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=6c9ee14e B=2e695402 result=6efff54e zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=25590ef9 B=71841756 result=b3d4f7a3 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=13ee3bec B=247d14fd result=386b50e9 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=b0d29c55 B=008d1d3a result=00801c10 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=52e66900 B=562bab4e result=56efeb4e zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=72113490 B=66d4a4ec result=0b3c8fa4 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=7aa8c04c B=22e3d0e5 result=9d8c9131 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=6761c227 B=4d8f294c result=45010004 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=790f7c34 B=5972f6b7 result=797ffeb7 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=3463ce38 B=73b83c80 result=c0ab91b8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=7c56c79d B=1bc5905f result=981c57fc zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=414765cc B=756643d1 result=414641c0 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=75388717 B=75ab3404 result=75bbb717 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=691e8051 B=718f4eb4 result=f78f319d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=9170c464 B=aa65e61d result=3bd6aa81 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=66f59285 B=86a94b7b result=06a10201 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=20111a21 B=501412d6 result=70151af7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=78389a2f B=3181de85 result=46b6bbaa zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=7a79f8f3 B=5f2e2cb4 result=d9a825a7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=382b2a00 B=1a8b1314 result=180b0200 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=af423f8a B=3063c42f result=bf63ffaf zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=4c0cf19a B=a9bc387d result=a250b91d zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=0f91f0e3 B=04381b9a result=13ca0c7d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=44474b91 B=3ed4306d result=04440001 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=b49bdfca B=10543d2b result=b4dfffeb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=689068ea B=442dd0ad result=2462983d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=948c58c6 B=acd7b47c result=41640d42 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=10 A=8302011b B=49283890 result=01000010 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=3d2bf1a7 B=6b926a05 result=7fbbfba7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=0d56093d B=51b84a6d result=bb9dbed0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=186a1e81 B=10580a58 result=28c228d9 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=1ae082fd B=55961029 result=10800029 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=7bea745e B=a8368c3b result=fbfefc7f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=274e5a96 B=145492df result=12f9c7b7 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=388e9693 B=422edd94 result=7abd7427 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=69eaa308 B=34790af1 result=20680200 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6a6569cf B=9138fd9f result=fb7dfddf zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=48cd9dd1 B=22f40062 result=25d99d6f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=5367db33 B=32b840d9 result=86201c0c zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=576d0b54 B=bdcd4502 result=154d0100 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=43f13e78 B=a03aa925 result=e3fbbf7d zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=60c14564 B=175919ab result=49682bb9 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=52f2e9fe B=382e50b8 result=8b213ab6 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=55265ead B=96e42877 result=14240825 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=5868f9dd B=b5e7a412 result=fdeffddf zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=2e3d4222 B=ab5be3dc result=82e15e46 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=6e15f4ca B=8363a0d0 result=f179959a zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=42400c53 B=467eeea8 result=42400c00 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=b94b44e2 B=707d4e75 result=f97f4ef7 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=71dad284 B=276139ac result=4a7998d8 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=73e0ef45 B=b41aded7 result=27fbce1c zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=6de02854 B=2d2c3427 result=2d202004 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=24982d4c B=5fbafad8 result=7fbaffdc zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=548d6dd4 B=98791c92 result=bc145142 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=13d5d9af B=426d9628 result=56436fd7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=45a550b9 B=b86e06fc result=002400b8 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=a2289101 B=1a32be8d result=ba3abf8d zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=50e7238e B=35fe6ab0 result=1ae8b8de zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=5ca054b6 B=168c7447 result=732cc8fd zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=6e6c71ac B=7ec8e5b7 result=6e4861a4 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=b0bf32d5 B=3f53953a result=bfffb7ff zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=34c75067 B=8d5f878b result=a767c8dc zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=55e00982 B=a333c214 result=f913cb96 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=8c286d42 B=869f3c57 result=84082c42 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=6287574e B=40efbda9 result=62efffef zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=93fec3e2 B=386760d0 result=5b976312 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=64237fbd B=a0273124 result=044ab0e1 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=3f069d27 B=46aad70c result=06029504 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=6116eecd B=53056109 result=7317efcd zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=7f1237dc B=453a6e8b result=39d7c951 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=732c922d B=be18d504 result=31456731 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=8be54597 B=544380fb result=00410093 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=111e360d B=0af77d73 result=1bff7f7f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=997def86 B=844ac83b result=1533274b zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=49105277 B=a563351d result=ee738794 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=588e4936 B=5a2e8885 result=580e0804 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=305ab290 B=720c38bc result=725ebabc zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=5e7950c0 B=796b0508 result=e50e4bb8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=976f6dd9 B=b70799f6 result=4e7707cf zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=10 A=53998d8d B=47ca2069 result=43880009 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=a913d2b2 B=b212de4d result=bb13deff zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=41352571 B=4083408b result=00b1e4e6 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=691a7843 B=14ceb2fe result=7de92b41 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=084d60f4 B=922e4af5 result=000c40f4 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=46e1914b B=49828666 result=4fe3976f zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=52b18b80 B=2ffc098e result=22b581f2 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=5e513964 B=5afeec74 result=b95025d8 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=422a5483 B=a532cab0 result=00224080 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=248172da B=14dbe003 result=34dbf2db zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=552ed43e B=82d2ac3f result=d25c27ff zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=01 A=6fdacc78 B=975928c2 result=0733f53a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=a80576ef B=145c3f52 result=00043642 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=2c3508c5 B=7d344b2d result=7d354bed zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=172eeb91 B=1c0fd53d result=fb1f1654 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=148d73ef B=3f346280 result=53c1d66f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=b06c1490 B=40c27cb5 result=00401490 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=bc68adae B=479b0021 result=fffbadaf zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=5cd251f2 B=50f6219d result=0bdc3055 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=86cf62a2 B=0d3e6682 result=940dc924 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=11b89e52 B=43381050 result=01381050 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=54d966a4 B=6e8af045 result=7edbf6e5 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=142e31ed B=5ba8c946 result=b88568a7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=7bc956c7 B=a5e6d040 result=21b02707 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=9ee0d996 B=50a2bd6b result=10a09902 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=9471c085 B=330f0b83 result=b77fcb87 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=2c4b86b1 B=103b174c result=1c106f65 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=58f5dbc3 B=4b2c6047 result=a4223c0a zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=60ddd4b8 B=6d679c48 result=60459408 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=7e3b6bcb B=0d295b69 result=7f3b7beb zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=7da2b395 B=5731478e result=26716c07 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=5855bbb1 B=5e80884d result=b6d643fe zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=4498e3d7 B=5691277c result=44902354 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=6ba9e3b6 B=423b976c result=6bbbf7fe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=2dc26f0a B=43ff9f67 result=e9c2cfa3 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=a0bc1fb9 B=725b52e1 result=1317729a zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=1a90c6e3 B=0c66036f result=08000263 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=3496ea4d B=485335ee result=7cd7ffef zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=5065a2d7 B=55530a06 result=fb1298d1 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=3aae88cf B=6af669ba result=a5a4f289 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=61b90d76 B=6f45731d result=61010114 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=33499fa8 B=b21eb04d result=b35fbfed zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=44987d23 B=6df82878 result=d6a054ab zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=1d151a07 B=26518a99 result=4366a4a0 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=5d3d9b95 B=505eb9b0 result=501c9990 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=58703ae6 B=21d618b8 result=79f63afe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=be56e228 B=758554ee result=48d18d3a zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=4827a352 B=9b947dbd result=e3bc210f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=45e40e9e B=2097de38 result=00840e18 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=3d6a9675 B=843af0c6 result=bd7af6f7 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=161d3326 B=059239c7 result=108af95f zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=9fcf6e83 B=5c0141c4 result=fbd0b047 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=a62a1800 B=5d3a04f8 result=042a0000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=603c328a B=3c474b26 result=7c7f7bae zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=62cc3ec0 B=000ba10d result=62c09db3 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=98488ceb B=88f656c0 result=213ee3ab zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=10 A=5d45a606 B=7884bf75 result=5804a604 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=453da1e6 B=4011e4c6 result=453de5e6 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=78906083 B=5d862ed1 result=1b0a31b2 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=49083b86 B=55d60689 result=9ede420f zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=560aee47 B=0e45dd6c result=0600cc44 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=95e7eb4f B=4e9b4eca result=dfffefcf zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=6bcc0c3e B=5ef026d5 result=0cdbe569 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=a4715553 B=41d6fa85 result=e6484fd8 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=6d360441 B=ba5940a2 result=28100000 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=9072494f B=5902107f result=d972597f zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=99496777 B=b4e39ea2 result=e465c8d5 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=1ad90b04 B=067f6bb8 result=215876bc zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=6f3cdf44 B=2b4b5453 result=2b085440 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=5f817c38 B=888646bb result=df877ebb zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=602ef2f5 B=7a5a873c result=e5d46bb9 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=0f05b273 B=4f6bd239 result=5e7184ac zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=a5a5db90 B=6e872eab result=24850a80 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=57f218f4 B=05d4ce85 result=57f6def5 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=68e1b5e8 B=66f7cb68 result=01e9ea80 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=5540a0bf B=8e879178 result=e3c83237 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=557efa13 B=2d32b9b3 result=0532b813 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=145c5ffd B=3e60affb result=3e7cffff zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=142a851b B=699d00bc result=aa8d845f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=4ce84173 B=69a97f2f result=b691c0a2 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=96cfba70 B=6144a171 result=0044a070 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=11 A=280a2f2a B=2afa3f8b result=2afa3fab zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=4ae1a22d B=74f2709e result=d5ef318f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=14a3beba B=61b15c9d result=76551b57 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=5637120f B=bcadede5 result=14250005 zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=11 A=8cab9c29 B=2118b43c result=adbbbc3d zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=b1a05e83 B=214f5ae3 result=905103a0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=82ca10da B=87d77092 result=0aa1816c zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=5dfd48c8 B=8f75ad03 result=0d750800 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=11 A=28f024ce B=0f9da74b result=2ffda7cf zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=30c507e6 B=2bba35a8 result=050ad23e zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=177517dd B=8ec250af result=a637688c zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=3b2fe2ab B=40653cac result=002520a8 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=1e5ff7fa B=6bf4ea92 result=7ffffffa zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=6c1f7254 B=b5d50fd8 result=b64a627c zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=7ab73b41 B=a74f5500 result=22069041 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=763a4c84 B=1917333b result=10120000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=93443f92 B=6259bed8 result=f35dbfda zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=4eec4313 B=8dfb7ad3 result=c0f0c840 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=01 A=09a913d8 B=45268f97 result=4ecfa36f zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=10 A=2712ae0e B=1ced536a result=0400020a zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=a7804e70 B=75fef122 result=f7feff72 zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=00 A=2ae8ce3d B=31296248 result=f9bf6bf5 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=3b2580b9 B=51fb7c4c result=8d20fd05 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=4e16b5b3 B=62a5cf29 result=42048521 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=11 A=47fa6d6e B=78ff83f0 result=7fffeffe zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=93cf3172 B=031fee27 result=90af434b zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=4afb003c B=61e5e725 result=ace0e761 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=65c5bd51 B=12f56daa result=00c52d00 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=5ae56b15 B=7994eec3 result=7bf5efd7 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=96155bd2 B=a5e06b52 result=f034f080 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=5b7ad5e8 B=7bdb1923 result=d755ef0b zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=38d5d8fc B=366040fd result=304040fc zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=757007e6 B=4eeb34ce result=7ffb37ee zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=5c40ac4f B=50eaddce result=0b55ce81 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=4ac64df1 B=9516854c result=dfdcd33d zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=10 A=074b1ecb B=403655d7 result=000214c3 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=6401ba1a B=638bcb1b result=678bfb1b zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=112133a5 B=aec8080c result=62592b99 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=78a25067 B=986c5271 result=110ea2d8 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=6efe5de3 B=5ca40a81 result=4ca40881 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=7bf81d8c B=801f9189 result=fbff9d8d zero=1 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=0b6c128d B=749a6df3 result=96d1a49a zero=1 negative=1 carry=0 borrow=1 overflow=0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=00 A=7fffffff B=00000001 result=7ffffffe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=00 A=80000000 B=80000000 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=fffffffe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000008 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=00000003 B=00000005 result=00000008 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=80000001 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=01 A=7fffffff B=ffffffff result=7ffffffe zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k160tffg676-2
+Top: alu32_gate
+INFO: [Device 21-403] Loading part xc7k160tffg676-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1851.094 ; gain = 259.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu32_gate' [F:/FPGA/project/ALU/alu32_gate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder32_gate' [F:/FPGA/project/ALU/adder32_gate.v:15]
+INFO: [Synth 8-6157] synthesizing module 'full_adder_1bit' [F:/FPGA/project/ALU/full_adder_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder_1bit' (1#1) [F:/FPGA/project/ALU/full_adder_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder32_gate' (2#1) [F:/FPGA/project/ALU/adder32_gate.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu32_gate' (3#1) [F:/FPGA/project/ALU/alu32_gate.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1935.691 ; gain = 343.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1935.691 ; gain = 343.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1935.691 ; gain = 343.887
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1935.691 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2020.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2151.371 ; gain = 559.566
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2151.371 ; gain = 774.598
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=1 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=1 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=1 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=1 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=0 negative=0 carry=0 borrow=1 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=0 carry=0 borrow=1 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=1 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=1 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=0 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=x negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=x
+op=00 A=80000000 B=80000000 result=00000000 zero=x negative=0 carry=1 borrow=0 overflow=x
+op=00 A=ffffffff B=00000001 result=00000000 zero=x negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=1 borrow=0 overflow=x
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=x
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=1 carry=1 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=0 negative=0 carry=1 borrow=0 overflow=x
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=1 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=0 carry=1 borrow=0 overflow=x
+op=10 A=00000000 B=00000000 result=00000000 zero=x negative=0 carry=0 borrow=1 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=x negative=0 carry=0 borrow=1 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=x borrow=x overflow=x
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=x borrow=x overflow=x
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=x borrow=x overflow=x
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=x borrow=x overflow=x
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=x borrow=x overflow=x
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=x borrow=x overflow=x
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=x borrow=x overflow=x
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=x borrow=x overflow=x
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=x borrow=x overflow=x
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=1 carry=x borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=0 negative=0 carry=x borrow=0 overflow=x
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=x borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=0 carry=x borrow=0 overflow=x
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=x overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=x overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=0 borrow=1 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=0 borrow=0 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2444.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=0 borrow=0 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2444.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+op=00 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=00 A=00000001 B=00000001 result=00000002 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=00 A=7fffffff B=00000001 result=80000000 zero=0 negative=1 carry=0 borrow=0 overflow=1
+op=00 A=80000000 B=80000000 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=1
+op=00 A=ffffffff B=00000001 result=00000000 zero=1 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000005 B=00000003 result=00000002 zero=0 negative=0 carry=1 borrow=0 overflow=0
+op=01 A=00000003 B=00000005 result=fffffffe zero=0 negative=1 carry=0 borrow=1 overflow=0
+op=01 A=80000000 B=00000001 result=7fffffff zero=0 negative=0 carry=1 borrow=0 overflow=1
+op=01 A=7fffffff B=ffffffff result=80000000 zero=0 negative=1 carry=0 borrow=1 overflow=1
+op=10 A=f0f0f0f0 B=0ff000ff result=00f000f0 zero=0 negative=0 carry=0 borrow=0 overflow=0
+op=10 A=aaaaaaaa B=55555555 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=f0f0f0f0 B=0ff000ff result=fff0f0ff zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=11 A=aaaaaaaa B=55555555 result=ffffffff zero=0 negative=1 carry=0 borrow=0 overflow=0
+op=10 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+op=11 A=00000000 B=00000000 result=00000000 zero=1 negative=0 carry=0 borrow=0 overflow=0
+$finish called at time : 15 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:33]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:36]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:39]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:42]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:45]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:48]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:51]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:54]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:57]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:60]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:63]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:66]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:75]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:78]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:81]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:84]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:87]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:90]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:93]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 11:18:14 2026...

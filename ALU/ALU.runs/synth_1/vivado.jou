@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 15 11:28:01 2026
+# Process ID: 5024
+# Current directory: F:/FPGA/project/ALU/ALU.runs/synth_1
+# Command line: vivado.exe -log alu32_gate.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu32_gate.tcl
+# Log file: F:/FPGA/project/ALU/ALU.runs/synth_1/alu32_gate.vds
+# Journal file: F:/FPGA/project/ALU/ALU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu32_gate.tcl -notrace

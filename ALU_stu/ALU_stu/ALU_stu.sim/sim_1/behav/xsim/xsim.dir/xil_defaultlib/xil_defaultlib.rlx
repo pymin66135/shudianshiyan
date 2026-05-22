@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.v,1778737198,verilog,,F:/FPGA/project/ALU_stu/src/adder32_gate.v,,sys_clk,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_clk_wiz.v,1778737198,verilog,,F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.v,,sys_clk_clk_wiz,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_flags_and_result_rom/sim/test_flags_and_result_rom.v,1778738654,verilog,,F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_vector_rom/sim/test_vector_rom.v,,test_flags_and_result_rom,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_vector_rom/sim/test_vector_rom.v,1778738537,verilog,,F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_clk_wiz.v,,test_vector_rom,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sim_1/new/alu_tb.vhd,1778739648,vhdl,,,,alu_tb,,,,,,,,
+F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/new/top.v,1778035692,verilog,,,,top,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/src/adder32_gate.v,1778814722,verilog,,F:/FPGA/project/ALU_stu/src/alu.v,,adder32_gate,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/src/alu.v,1779365111,verilog,,F:/FPGA/project/ALU_stu/src/full_adder_1bit.v,,alu,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,
+F:/FPGA/project/ALU_stu/src/full_adder_1bit.v,1778810248,verilog,,F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/new/top.v,,full_adder_1bit,,,../../../../ALU_stu.gen/sources_1/ip/sys_clk,,,,,

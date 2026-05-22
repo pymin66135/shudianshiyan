@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 15 11:18:19 2026
+# Process ID: 1832
+# Current directory: F:/FPGA/project/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8788 F:\FPGA\project\ALU\ALU.xpr
+# Log file: F:/FPGA/project/ALU/vivado.log
+# Journal file: F:/FPGA/project/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/project/ALU/ALU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_alu32_gate.tcl
+close_sim
+launch_simulation
+source tb_alu32_gate.tcl
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+current_design rtl_1
+close_sim

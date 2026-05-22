@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+F:/FPGA/project/ALU/adder32_gate.v,1778814722,verilog,,F:/FPGA/project/ALU/alu32_gate.v,,adder32_gate,,,,,,,,
+F:/FPGA/project/ALU/alu32_gate.v,1778814814,verilog,,F:/FPGA/project/ALU/full_adder_1bit.v,,alu32_gate,,,,,,,,
+F:/FPGA/project/ALU/full_adder_1bit.v,1778810248,verilog,,F:/FPGA/project/ALU/tb_alu32_gate.v,,full_adder_1bit,,,,,,,,
+F:/FPGA/project/ALU/tb_adder32_gate.v,1778810937,verilog,,,,tb_adder32_gate,,,,,,,,
+F:/FPGA/project/ALU/tb_alu32_gate.v,1778815640,verilog,,,,tb_alu32_gate,,,,,,,,

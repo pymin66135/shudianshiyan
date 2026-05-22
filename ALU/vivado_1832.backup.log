@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 15 11:18:19 2026
+# Process ID: 1832
+# Current directory: F:/FPGA/project/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8788 F:\FPGA\project\ALU\ALU.xpr
+# Log file: F:/FPGA/project/ALU/vivado.log
+# Journal file: F:/FPGA/project/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/project/ALU/ALU.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/FPGA/project/ALU/ALU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:33]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:36]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:39]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:42]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:45]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:48]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:51]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:54]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:57]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:60]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:63]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:66]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:75]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:78]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:81]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:84]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:87]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:90]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:93]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:34]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:37]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:40]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:43]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:46]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:49]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:52]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:55]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:58]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:61]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:64]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:67]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:34]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:37]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:40]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:43]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:46]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:49]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:52]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:55]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:58]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:61]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:64]
+ERROR: [VRFC 10-2989] 'a' is not declared [F:/FPGA/project/ALU/tb_alu32_gate.v:67]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- ADD Tests ---
+op=00 A=00000000 B=00000000 res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=00 A=00000001 B=00000001 res=00000002 Z=0 N=0 C=0 B_out=0 V=0
+op=00 A=00000001 B=ffffffff res=00000000 Z=1 N=0 C=1 B_out=0 V=0
+op=00 A=7fffffff B=00000001 res=80000000 Z=0 N=1 C=0 B_out=0 V=1
+op=00 A=80000000 B=80000000 res=00000000 Z=1 N=0 C=1 B_out=0 V=1
+op=00 A=ffffffff B=00000001 res=00000000 Z=1 N=0 C=1 B_out=0 V=0
+op=00 A=fffffffe B=00000001 res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=00 A=00000000 B=ffffffff res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=00 A=12345678 B=87654321 res=99999999 Z=0 N=1 C=0 B_out=0 V=0
+op=00 A=aaaaaaaa B=55555555 res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=00 A=7fffffff B=7fffffff res=fffffffe Z=0 N=1 C=0 B_out=0 V=1
+op=00 A=80000000 B=ffffffff res=7fffffff Z=0 N=0 C=1 B_out=0 V=1
+
+--- SUB Tests ---
+op=01 A=00000000 B=00000000 res=00000000 Z=1 N=0 C=1 B_out=0 V=0
+op=01 A=00000005 B=00000003 res=00000002 Z=0 N=0 C=1 B_out=0 V=0
+op=01 A=00000003 B=00000005 res=fffffffe Z=0 N=1 C=0 B_out=1 V=0
+op=01 A=80000000 B=00000001 res=7fffffff Z=0 N=0 C=1 B_out=0 V=1
+op=01 A=7fffffff B=ffffffff res=80000000 Z=0 N=1 C=0 B_out=1 V=1
+op=01 A=ffffffff B=ffffffff res=00000000 Z=1 N=0 C=1 B_out=0 V=0
+op=01 A=00000000 B=00000001 res=ffffffff Z=0 N=1 C=0 B_out=1 V=0
+op=01 A=80000000 B=80000000 res=00000000 Z=1 N=0 C=1 B_out=0 V=0
+op=01 A=aaaaaaaa B=55555555 res=55555555 Z=0 N=0 C=1 B_out=0 V=1
+op=01 A=55555555 B=aaaaaaaa res=aaaaaaab Z=0 N=1 C=0 B_out=1 V=1
+
+--- AND Logic Tests ---
+op=10 A=00000000 B=00000000 res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=10 A=ffffffff B=ffffffff res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=10 A=00000000 B=ffffffff res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=10 A=ffffffff B=00000000 res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=10 A=aaaaaaaa B=55555555 res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=10 A=f0f0f0f0 B=0f0f0f0f res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=10 A=ff00ff00 B=00ff00ff res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=10 A=12345678 B=12345678 res=12345678 Z=0 N=0 C=0 B_out=0 V=0
+
+--- OR Logic Tests ---
+op=11 A=00000000 B=00000000 res=00000000 Z=1 N=0 C=0 B_out=0 V=0
+op=11 A=ffffffff B=ffffffff res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=11 A=00000000 B=ffffffff res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=11 A=ffffffff B=00000000 res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=11 A=aaaaaaaa B=55555555 res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=11 A=f0f0f0f0 B=0f0f0f0f res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=11 A=ff00ff00 B=00ff00ff res=ffffffff Z=0 N=1 C=0 B_out=0 V=0
+op=11 A=12345678 B=12345678 res=12345678 Z=0 N=0 C=0 B_out=0 V=0
+$finish called at time : 400 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 191
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_alu32_gate' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_alu32_gate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/adder32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/project/ALU/tb_alu32_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_alu32_gate
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 640b75f1210e45258086358d51bcb2d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_alu32_gate_behav xil_defaultlib.tb_alu32_gate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder32_gate_default
+Compiling module xil_defaultlib.alu32_gate
+Compiling module xil_defaultlib.tb_alu32_gate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_alu32_gate_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_alu32_gate_behav -key {Behavioral:sim_1:Functional:tb_alu32_gate} -tclbatch {tb_alu32_gate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_alu32_gate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- ADD Tests ---
+op=00 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=00 A=00000001 B=00000001 res=00000002 Zero=0 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=00 A=00000001 B=ffffffff res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=00 A=7fffffff B=00000001 res=80000000 Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=1
+op=00 A=80000000 B=80000000 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=1
+op=00 A=ffffffff B=00000001 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=00 A=fffffffe B=00000001 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=00000000 B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=12345678 B=87654321 res=99999999 Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=aaaaaaaa B=55555555 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=7fffffff B=7fffffff res=fffffffe Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=1
+op=00 A=80000000 B=ffffffff res=7fffffff Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=1
+
+--- SUB Tests ---
+op=01 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=00000005 B=00000003 res=00000002 Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=00000003 B=00000005 res=fffffffe Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=0
+op=01 A=80000000 B=00000001 res=7fffffff Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=1
+op=01 A=7fffffff B=ffffffff res=80000000 Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=1
+op=01 A=ffffffff B=ffffffff res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=00000000 B=00000001 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=0
+op=01 A=80000000 B=80000000 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=aaaaaaaa B=55555555 res=55555555 Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=1
+op=01 A=55555555 B=aaaaaaaa res=aaaaaaab Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=1
+
+--- AND Logic Tests ---
+op=10 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=ffffffff B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=10 A=00000000 B=ffffffff res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=ffffffff B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=aaaaaaaa B=55555555 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=f0f0f0f0 B=0f0f0f0f res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=ff00ff00 B=00ff00ff res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=12345678 B=12345678 res=12345678 Zero=0 Negative=0 Carry=0 Borrow=0 Overflow=0
+
+--- OR Logic Tests ---
+op=11 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=11 A=ffffffff B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=00000000 B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=ffffffff B=00000000 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=aaaaaaaa B=55555555 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=f0f0f0f0 B=0f0f0f0f res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=ff00ff00 B=00ff00ff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=12345678 B=12345678 res=12345678 Zero=0 Negative=0 Carry=0 Borrow=0 Overflow=0
+$finish called at time : 400 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 191
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_alu32_gate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_runs synth_1 -jobs 8
+[Fri May 15 11:27:59 2026] Launched synth_1...
+Run output will be captured here: F:/FPGA/project/ALU/ALU.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k160tffg676-2
+Top: alu32_gate
+INFO: [Device 21-403] Loading part xc7k160tffg676-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1661.215 ; gain = 254.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu32_gate' [F:/FPGA/project/ALU/alu32_gate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder32_gate' [F:/FPGA/project/ALU/adder32_gate.v:15]
+INFO: [Synth 8-6157] synthesizing module 'full_adder_1bit' [F:/FPGA/project/ALU/full_adder_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder_1bit' (1#1) [F:/FPGA/project/ALU/full_adder_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder32_gate' (2#1) [F:/FPGA/project/ALU/adder32_gate.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu32_gate' (3#1) [F:/FPGA/project/ALU/alu32_gate.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1714.633 ; gain = 307.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1714.633 ; gain = 307.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1714.633 ; gain = 307.625
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1714.633 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1957.727 ; gain = 550.719
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1957.727 ; gain = 849.141
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k160tffg676-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.340 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1966.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+current_design rtl_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 11:41:45 2026...

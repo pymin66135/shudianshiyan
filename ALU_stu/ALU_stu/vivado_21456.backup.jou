@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 21 19:34:57 2026
+# Process ID: 21456
+# Current directory: F:/FPGA/project/ALU_stu/ALU_stu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10712 F:\FPGA\project\ALU_stu\ALU_stu\ALU_stu.xpr
+# Log file: F:/FPGA/project/ALU_stu/ALU_stu/vivado.log
+# Journal file: F:/FPGA/project/ALU_stu/ALU_stu\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.xpr
+update_compile_order -fileset sources_1
+
+add_files -norecurse {F:/FPGA/project/ALU_stu/full_adder_1bit.v F:/FPGA/project/ALU_stu/adder32_gate.v F:/FPGA/project/ALU_stu/alu.v}
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FPGA/project/ALU_stu/adder32_gate.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/project/ALU_stu/adder32_gate.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/project/ALU_stu/alu.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/project/ALU_stu/alu.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/project/ALU_stu/full_adder_1bit.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/project/ALU_stu/full_adder_1bit.v
+add_files -norecurse {F:/FPGA/project/ALU_stu/src/adder32_gate.v F:/FPGA/project/ALU_stu/src/alu.v F:/FPGA/project/ALU_stu/src/mux4_1bit.v F:/FPGA/project/ALU_stu/src/full_adder_1bit.v}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sim_1/imports/ALU_arm/alu_tb_behav.wcfg
+source alu_tb.tcl
+run 1800 ns
+run 1800 us
+relaunch_sim
+run 1800 us
+restart
+run 1800 ns
+run 5000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+create_clock -period 20.000 -name sys_clk_pin -waveform {0.000 10.000} [get_ports clk_osc]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes r_rst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+close_sim
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq7'hXX [get_hw_probes r_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+close_design
+close_design
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+save_wave_config {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+set_property PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]

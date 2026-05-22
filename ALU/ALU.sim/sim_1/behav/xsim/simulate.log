@@ -1,0 +1,48 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+--- ADD Tests ---
+op=00 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=00 A=00000001 B=00000001 res=00000002 Zero=0 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=00 A=00000001 B=ffffffff res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=00 A=7fffffff B=00000001 res=80000000 Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=1
+op=00 A=80000000 B=80000000 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=1
+op=00 A=ffffffff B=00000001 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=00 A=fffffffe B=00000001 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=00000000 B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=12345678 B=87654321 res=99999999 Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=aaaaaaaa B=55555555 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=00 A=7fffffff B=7fffffff res=fffffffe Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=1
+op=00 A=80000000 B=ffffffff res=7fffffff Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=1
+
+--- SUB Tests ---
+op=01 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=00000005 B=00000003 res=00000002 Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=00000003 B=00000005 res=fffffffe Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=0
+op=01 A=80000000 B=00000001 res=7fffffff Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=1
+op=01 A=7fffffff B=ffffffff res=80000000 Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=1
+op=01 A=ffffffff B=ffffffff res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=00000000 B=00000001 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=0
+op=01 A=80000000 B=80000000 res=00000000 Zero=1 Negative=0 Carry=1 Borrow=0 Overflow=0
+op=01 A=aaaaaaaa B=55555555 res=55555555 Zero=0 Negative=0 Carry=1 Borrow=0 Overflow=1
+op=01 A=55555555 B=aaaaaaaa res=aaaaaaab Zero=0 Negative=1 Carry=0 Borrow=1 Overflow=1
+
+--- AND Logic Tests ---
+op=10 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=ffffffff B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=10 A=00000000 B=ffffffff res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=ffffffff B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=aaaaaaaa B=55555555 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=f0f0f0f0 B=0f0f0f0f res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=ff00ff00 B=00ff00ff res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=10 A=12345678 B=12345678 res=12345678 Zero=0 Negative=0 Carry=0 Borrow=0 Overflow=0
+
+--- OR Logic Tests ---
+op=11 A=00000000 B=00000000 res=00000000 Zero=1 Negative=0 Carry=0 Borrow=0 Overflow=0
+op=11 A=ffffffff B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=00000000 B=ffffffff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=ffffffff B=00000000 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=aaaaaaaa B=55555555 res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=f0f0f0f0 B=0f0f0f0f res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=ff00ff00 B=00ff00ff res=ffffffff Zero=0 Negative=1 Carry=0 Borrow=0 Overflow=0
+op=11 A=12345678 B=12345678 res=12345678 Zero=0 Negative=0 Carry=0 Borrow=0 Overflow=0
+$finish called at time : 400 ns : File "F:/FPGA/project/ALU/tb_alu32_gate.v" Line 191

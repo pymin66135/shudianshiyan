@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 14 13:53:05 2026
+# Process ID: 20616
+# Current directory: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/ila_0_synth_1
+# Command line: vivado.exe -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+# Log file: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/ila_0_synth_1/ila_0.vds
+# Journal file: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/ila_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_0.tcl -notrace

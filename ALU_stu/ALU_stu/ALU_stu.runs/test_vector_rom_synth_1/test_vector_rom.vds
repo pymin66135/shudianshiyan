@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 14 14:02:19 2026
+# Process ID: 9052
+# Current directory: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/test_vector_rom_synth_1
+# Command line: vivado.exe -log test_vector_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_vector_rom.tcl
+# Log file: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/test_vector_rom_synth_1/test_vector_rom.vds
+# Journal file: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/test_vector_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_vector_rom.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP test_vector_rom, cache-ID = 1d264b0da2741d59.
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 14:02:23 2026...

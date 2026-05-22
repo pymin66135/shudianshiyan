@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  8 10:30:56 2026
+# Process ID: 12372
+# Current directory: F:/FPGA/project/Lab2_Countdown_Timer_Clean
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18892 F:\FPGA\project\Lab2_Countdown_Timer_Clean\Lab2_Countdown_Timer_Clean.xpr
+# Log file: F:/FPGA/project/Lab2_Countdown_Timer_Clean/vivado.log
+# Journal file: F:/FPGA/project/Lab2_Countdown_Timer_Clean\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/project/Lab2_Countdown_Timer_Clean/Lab2_Countdown_Timer_Clean.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/15756/Lab2_Countdown_Timer_Clean' since last save.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionActiveHdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionActiveHdl
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'F:/FPGA/project/Lab2_Countdown_Timer_Clean/Lab2_Countdown_Timer_Clean.gen/sources_1', nor could it be found using path 'C:/Users/15756/Lab2_Countdown_Timer_Clean/Lab2_Countdown_Timer_Clean.gen/sources_1'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableResourceEstimation
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimCompileState
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ClassicSocBoot
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name LocalIPRepoLeafDirName
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2022) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2022) not recognized by Vivado. 
+
+WARNING: [Project 1-231] Project 'Lab2_Countdown_Timer_Clean.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+save_project_as project_LED_FSM F:/FPGA/project/project_LED_FSM -force
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k160tffg676-2
+Top: countdown_timer_top
+INFO: [Device 21-403] Loading part xc7k160tffg676-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1608.270 ; gain = 247.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'countdown_timer_top' [F:/FPGA/project/Lab2_Countdown_Timer_Clean/countdown_timer_top.v:16]
+	Parameter CLK_FREQ_HZ bound to: 50000000 - type: integer 
+	Parameter DEFAULT_TIME bound to: 7'b0001010 
+	Parameter MAX_TIME bound to: 7'b0111100 
+	Parameter IDLE bound to: 2'b00 
+	Parameter RUNNING bound to: 2'b01 
+	Parameter PAUSED bound to: 2'b10 
+	Parameter DONE bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'key_pulse' [F:/FPGA/project/Lab2_Countdown_Timer_Clean/key_pulse.v:13]
+	Parameter CNT_MAX bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'key_pulse' (1#1) [F:/FPGA/project/Lab2_Countdown_Timer_Clean/key_pulse.v:13]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/project/Lab2_Countdown_Timer_Clean/countdown_timer_top.v:107]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/project/Lab2_Countdown_Timer_Clean/countdown_timer_top.v:221]
+INFO: [Synth 8-6157] synthesizing module 'seg7_decoder' [F:/FPGA/project/Lab2_Countdown_Timer_Clean/seg7_decoder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'seg7_decoder' (2#1) [F:/FPGA/project/Lab2_Countdown_Timer_Clean/seg7_decoder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'countdown_timer_top' (3#1) [F:/FPGA/project/Lab2_Countdown_Timer_Clean/countdown_timer_top.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1689.512 ; gain = 328.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1689.512 ; gain = 328.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1689.512 ; gain = 328.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1689.512 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/FPGA/project/Lab2_Countdown_Timer_Clean/countdown_timer.xdc]
+Finished Parsing XDC File [F:/FPGA/project/Lab2_Countdown_Timer_Clean/countdown_timer.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1785.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1931.406 ; gain = 570.215
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1931.406 ; gain = 821.008
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 10:36:32 2026...

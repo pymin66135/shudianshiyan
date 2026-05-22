@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 14 13:40:00 2026
+# Process ID: 29508
+# Current directory: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1
+# Command line: vivado.exe -log sys_clk.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_clk.tcl
+# Log file: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk.vds
+# Journal file: E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_clk.tcl -notrace
