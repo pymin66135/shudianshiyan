@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/constrs_1/new/xdc.xdc rfile:../../../ALU_stu.srcs/constrs_1/new/xdc.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/constrs_1/new/xdc.xdc rfile:../../../ALU_stu.srcs/constrs_1/new/xdc.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G22 [get_ports clk_osc]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]

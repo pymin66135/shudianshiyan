@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu May 14 13:40:31 2026
--- Host        : DESKTOP-1Q97FT3 running 64-bit major release  (build 9200)
+-- Date        : Fri May 22 10:40:50 2026
+-- Host        : pymin66135 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl
+--               f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl
 -- Design      : sys_clk
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -78,12 +78,12 @@ clkout1_buf: unisim.vcomponents.BUFG
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT_F => 19.875000,
+      CLKFBOUT_MULT_F => 19.375000,
       CLKFBOUT_PHASE => 0.000000,
       CLKFBOUT_USE_FINE_PS => false,
       CLKIN1_PERIOD => 20.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 6.625000,
+      CLKOUT0_DIVIDE_F => 6.250000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,

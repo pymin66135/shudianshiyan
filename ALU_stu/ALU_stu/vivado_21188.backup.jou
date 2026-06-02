@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  1 11:05:20 2026
+# Process ID: 21188
+# Current directory: F:/FPGA/shudianshiyan/ALU_stu/ALU_stu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10976 F:\FPGA\shudianshiyan\ALU_stu\ALU_stu\ALU_stu.xpr
+# Log file: F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/vivado.log
+# Journal file: F:/FPGA/shudianshiyan/ALU_stu/ALU_stu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.xpr
+update_compile_order -fileset sources_1

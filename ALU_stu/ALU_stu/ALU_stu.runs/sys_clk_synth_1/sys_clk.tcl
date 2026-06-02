@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk.tcl"
+  variable script "F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,19 +79,19 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.cache/wt [current_project]
-set_property parent.project_path E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.xpr [current_project]
+set_property webtalk.parent_dir F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.cache/wt [current_project]
+set_property parent.project_path F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.cache/ip [current_project]
+set_property ip_output_repo f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.srcs/sources_1/ip/sys_clk/sys_clk.xci
-set_property used_in_implementation false [get_files -all e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_board.xdc]
-set_property used_in_implementation false [get_files -all e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.xdc]
-set_property used_in_implementation false [get_files -all e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/sys_clk/sys_clk.xci
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_board.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -107,7 +107,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cached_ip [config_ip_cache -export -no_bom  -dir E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1 -new_name sys_clk -ip [get_ips sys_clk]]
+set cached_ip [config_ip_cache -export -no_bom  -dir F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1 -new_name sys_clk -ip [get_ips sys_clk]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cached_ip eq {} } {
@@ -162,32 +162,32 @@ create_report "sys_clk_synth_1_synth_report_utilization_0" "report_utilization -
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk.dcp e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.dcp
+  file copy -force F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk.dcp f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.v
+  write_verilog -force -mode synth_stub f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl
+  write_vhdl -force -mode synth_stub f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v
+  write_verilog -force -mode funcsim f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -197,47 +197,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk.dcp e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.dcp
+  file copy -force F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk.dcp f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk_stub.v e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.v
+  file rename -force F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk_stub.v f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk_stub.vhdl e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl
+  file rename -force F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk_stub.vhdl f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk_sim_netlist.v e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v
+  file rename -force F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk_sim_netlist.v f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.runs/sys_clk_synth_1/sys_clk_sim_netlist.vhdl e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl
+  file rename -force F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/sys_clk_synth_1/sys_clk_sim_netlist.vhdl f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.ip_user_files/ip/sys_clk]} {
+if {[file isdir F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.ip_user_files/ip/sys_clk]} {
   catch { 
-    file copy -force e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.v E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.ip_user_files/ip/sys_clk
+    file copy -force f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.v F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.ip_user_files/ip/sys_clk
   }
 }
 
-if {[file isdir E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.ip_user_files/ip/sys_clk]} {
+if {[file isdir F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.ip_user_files/ip/sys_clk]} {
   catch { 
-    file copy -force e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl E:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.ip_user_files/ip/sys_clk
+    file copy -force f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.ip_user_files/ip/sys_clk
   }
 }
 file delete __synthesis_is_running__

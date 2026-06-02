@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  1 11:01:31 2026
+# Process ID: 7712
+# Current directory: F:/FPGA/shudianshiyan/ALU_stu/ALU_stu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18808 F:\FPGA\shudianshiyan\ALU_stu\ALU_stu\ALU_stu.xpr
+# Log file: F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/vivado.log
+# Journal file: F:/FPGA/shudianshiyan/ALU_stu/ALU_stu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.852 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  1 11:02:13 2026...

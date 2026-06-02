@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/synth_1/top.tcl"
+  variable script "F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,39 +77,39 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.cache/wt [current_project]
-set_property parent.project_path F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.xpr [current_project]
+set_property webtalk.parent_dir F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.cache/wt [current_project]
+set_property parent.project_path F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.cache/ip [current_project]
+set_property ip_output_repo f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/imports/exp3/ALU_test_vector/test_vector.coe
-add_files F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/imports/exp3/ALU_test_result/flags_and_result.coe
+add_files F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/imports/exp3/ALU_test_vector/test_vector.coe
+add_files F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/imports/exp3/ALU_test_result/flags_and_result.coe
 read_verilog -library xil_defaultlib {
-  F:/FPGA/project/ALU_stu/src/adder32_gate.v
-  F:/FPGA/project/ALU_stu/src/alu.v
-  F:/FPGA/project/ALU_stu/src/full_adder_1bit.v
-  F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/new/top.v
+  F:/FPGA/shudianshiyan/ALU_stu/src/adder32_gate.v
+  F:/FPGA/shudianshiyan/ALU_stu/src/alu.v
+  F:/FPGA/shudianshiyan/ALU_stu/src/full_adder_1bit.v
+  F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/new/top.v
 }
-read_ip -quiet F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/sys_clk/sys_clk.xci
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_board.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/sys_clk/sys_clk.xci
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_board.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
 
-read_ip -quiet F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_vector_rom/test_vector_rom_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_vector_rom/test_vector_rom_ooc.xdc]
 
-read_ip -quiet F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom_ooc.xdc]
 
-read_ip -quiet F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/ila_0/ila_0.xci
-set_property used_in_synthesis false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/sources_1/ip/ila_0/ila_0.xci
+set_property used_in_synthesis false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -120,8 +120,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/constrs_1/new/xdc.xdc
-set_property used_in_implementation false [get_files F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.srcs/constrs_1/new/xdc.xdc]
+read_xdc F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/constrs_1/new/xdc.xdc
+set_property used_in_implementation false [get_files F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.srcs/constrs_1/new/xdc.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

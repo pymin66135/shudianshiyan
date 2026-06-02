@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu May 14 13:40:31 2026
--- Host        : DESKTOP-1Q97FT3 running 64-bit major release  (build 9200)
+-- Date        : Fri May 22 10:40:50 2026
+-- Host        : pymin66135 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               e:/workspace/HDL/00YingCai/Test/class3/class_routine/ALU_FULL/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl
+--               f:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl
 -- Design      : sys_clk
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7k160tffg676-2

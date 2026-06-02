@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/FPGA/project/ALU_stu/ALU_stu/ALU_stu.runs/synth_1'
+HD_PWD='F:/FPGA/shudianshiyan/ALU_stu/ALU_stu/ALU_stu.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
