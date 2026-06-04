@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../simple_mcu_test.gen/sources_1/ip/verify_RAM/sim/verify_RAM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

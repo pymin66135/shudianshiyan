@@ -1,0 +1,44 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+cycle=0 pc=0x00000000 instr=0xe3a00005 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000000 unsupported=0
+cycle=1 pc=0x00000004 instr=0xe3a01003 rw=1 wa=R1 wd=0x00000003 mw=0 ma=0x00000003 md=0x00000000 unsupported=0
+cycle=2 pc=0x00000008 instr=0xe0802001 rw=1 wa=R2 wd=0x00000008 mw=0 ma=0x00000008 md=0x00000003 unsupported=0
+cycle=3 pc=0x0000000c instr=0xe0403001 rw=1 wa=R3 wd=0x00000002 mw=0 ma=0x00000002 md=0x00000003 unsupported=0
+cycle=4 pc=0x00000010 instr=0xe0004001 rw=1 wa=R4 wd=0x00000001 mw=0 ma=0x00000001 md=0x00000003 unsupported=0
+cycle=5 pc=0x00000014 instr=0xe1805001 rw=1 wa=R5 wd=0x00000007 mw=0 ma=0x00000007 md=0x00000003 unsupported=0
+cycle=6 pc=0x00000018 instr=0xe3a07000 rw=1 wa=R7 wd=0x00000000 mw=0 ma=0x00000000 md=0x00000005 unsupported=0
+cycle=7 pc=0x0000001c instr=0xe5872000 rw=0 wa=R2 wd=0x00000000 mw=1 ma=0x00000000 md=0x00000008 unsupported=0
+cycle=8 pc=0x00000020 instr=0xe5873004 rw=0 wa=R3 wd=0x00000004 mw=1 ma=0x00000004 md=0x00000002 unsupported=0
+cycle=9 pc=0x00000024 instr=0xe5874008 rw=0 wa=R4 wd=0x00000008 mw=1 ma=0x00000008 md=0x00000001 unsupported=0
+cycle=10 pc=0x00000028 instr=0xe587500c rw=0 wa=R5 wd=0x0000000c mw=1 ma=0x0000000c md=0x00000007 unsupported=0
+cycle=11 pc=0x0000002c instr=0xe5976000 rw=1 wa=R6 wd=0x00000008 mw=0 ma=0x00000000 md=0x00000005 unsupported=0
+cycle=12 pc=0x00000030 instr=0xe2868004 rw=1 wa=R8 wd=0x0000000c mw=0 ma=0x0000000c md=0x00000001 unsupported=0
+cycle=13 pc=0x00000034 instr=0xe5878010 rw=0 wa=R8 wd=0x00000010 mw=1 ma=0x00000010 md=0x0000000c unsupported=0
+cycle=14 pc=0x00000038 instr=0xea000001 rw=0 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000003 unsupported=0
+cycle=15 pc=0x00000044 instr=0xe2809002 rw=1 wa=R9 wd=0x00000007 mw=0 ma=0x00000007 md=0x00000008 unsupported=0
+cycle=16 pc=0x00000048 instr=0xeb000001 rw=1 wa=R14 wd=0x0000004c mw=0 ma=0x00000005 md=0x00000003 unsupported=0
+cycle=17 pc=0x00000054 instr=0xe280b007 rw=1 wa=R11 wd=0x0000000c mw=0 ma=0x0000000c md=0x00000000 unsupported=0
+cycle=18 pc=0x00000058 instr=0xe587b014 rw=0 wa=R11 wd=0x00000014 mw=1 ma=0x00000014 md=0x0000000c unsupported=0
+cycle=19 pc=0x0000005c instr=0xe587e018 rw=0 wa=R14 wd=0x00000018 mw=1 ma=0x00000018 md=0x0000004c unsupported=0
+cycle=20 pc=0x00000060 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=21 pc=0x00000064 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=22 pc=0x00000068 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=23 pc=0x0000006c instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=24 pc=0x00000070 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=25 pc=0x00000074 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=26 pc=0x00000078 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=27 pc=0x0000007c instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=28 pc=0x00000080 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=29 pc=0x00000084 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=30 pc=0x00000088 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=31 pc=0x0000008c instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=32 pc=0x00000090 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=33 pc=0x00000094 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=34 pc=0x00000098 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+
+========== Register checks ==========
+[PASS] R0 = 0x00000005
+[PASS] R1 = 0x00000003
+[PASS] R2 = 0x00000008
+[PASS] R3 = 0x00000002
+[PA

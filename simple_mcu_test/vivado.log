@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  4 11:47:18 2026
+# Process ID: 20504
+# Current directory: F:/FPGA/shudianshiyan/simple_mcu_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20620 F:\FPGA\shudianshiyan\simple_mcu_test\simple_mcu_test.xpr
+# Log file: F:/FPGA/shudianshiyan/simple_mcu_test/vivado.log
+# Journal file: F:/FPGA/shudianshiyan/simple_mcu_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/top.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1073.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mcu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/test_ROM.mif'
+INFO: [SIM-utils-43] Exported 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/test_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mcu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cond_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mcu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module operand2_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mcu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim'
+"xelab -wto bdc1c0e0f0d2487eb4e3d79c632cb8d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mcu_top_tb_behav xil_defaultlib.mcu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto bdc1c0e0f0d2487eb4e3d79c632cb8d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mcu_top_tb_behav xil_defaultlib.mcu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.instr_rom_default
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.cond_unit
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.operand2_decode
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_mem_default
+Compiling module xil_defaultlib.branch_unit
+Compiling module xil_defaultlib.mcu_top
+Compiling module xil_defaultlib.mcu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mcu_top_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/xsim.dir/mcu_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun  4 11:48:51 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mcu_top_tb_behav -key {Behavioral:sim_1:Functional:mcu_top_tb} -tclbatch {mcu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source mcu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+cycle=0 pc=0x00000000 instr=0xe3a00005 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000000 unsupported=0
+cycle=1 pc=0x00000004 instr=0xe3a01003 rw=1 wa=R1 wd=0x00000003 mw=0 ma=0x00000003 md=0x00000000 unsupported=0
+cycle=2 pc=0x00000008 instr=0xe0802001 rw=1 wa=R2 wd=0x00000008 mw=0 ma=0x00000008 md=0x00000003 unsupported=0
+cycle=3 pc=0x0000000c instr=0xe0403001 rw=1 wa=R3 wd=0x00000002 mw=0 ma=0x00000002 md=0x00000003 unsupported=0
+cycle=4 pc=0x00000010 instr=0xe0004001 rw=1 wa=R4 wd=0x00000001 mw=0 ma=0x00000001 md=0x00000003 unsupported=0
+cycle=5 pc=0x00000014 instr=0xe1805001 rw=1 wa=R5 wd=0x00000007 mw=0 ma=0x00000007 md=0x00000003 unsupported=0
+cycle=6 pc=0x00000018 instr=0xe3a07000 rw=1 wa=R7 wd=0x00000000 mw=0 ma=0x00000000 md=0x00000005 unsupported=0
+cycle=7 pc=0x0000001c instr=0xe5872000 rw=0 wa=R2 wd=0x00000000 mw=1 ma=0x00000000 md=0x00000008 unsupported=0
+cycle=8 pc=0x00000020 instr=0xe5873004 rw=0 wa=R3 wd=0x00000004 mw=1 ma=0x00000004 md=0x00000002 unsupported=0
+cycle=9 pc=0x00000024 instr=0xe5874008 rw=0 wa=R4 wd=0x00000008 mw=1 ma=0x00000008 md=0x00000001 unsupported=0
+cycle=10 pc=0x00000028 instr=0xe587500c rw=0 wa=R5 wd=0x0000000c mw=1 ma=0x0000000c md=0x00000007 unsupported=0
+cycle=11 pc=0x0000002c instr=0xe5976000 rw=1 wa=R6 wd=0x00000008 mw=0 ma=0x00000000 md=0x00000005 unsupported=0
+cycle=12 pc=0x00000030 instr=0xe2868004 rw=1 wa=R8 wd=0x0000000c mw=0 ma=0x0000000c md=0x00000001 unsupported=0
+cycle=13 pc=0x00000034 instr=0xe5878010 rw=0 wa=R8 wd=0x00000010 mw=1 ma=0x00000010 md=0x0000000c unsupported=0
+cycle=14 pc=0x00000038 instr=0xea000001 rw=0 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000003 unsupported=0
+cycle=15 pc=0x00000044 instr=0xe2809002 rw=1 wa=R9 wd=0x00000007 mw=0 ma=0x00000007 md=0x00000008 unsupported=0
+cycle=16 pc=0x00000048 instr=0xeb000001 rw=1 wa=R14 wd=0x0000004c mw=0 ma=0x00000005 md=0x00000003 unsupported=0
+cycle=17 pc=0x00000054 instr=0xe280b007 rw=1 wa=R11 wd=0x0000000c mw=0 ma=0x0000000c md=0x00000000 unsupported=0
+cycle=18 pc=0x00000058 instr=0xe587b014 rw=0 wa=R11 wd=0x00000014 mw=1 ma=0x00000014 md=0x0000000c unsupported=0
+cycle=19 pc=0x0000005c instr=0xe587e018 rw=0 wa=R14 wd=0x00000018 mw=1 ma=0x00000018 md=0x0000004c unsupported=0
+cycle=20 pc=0x00000060 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=21 pc=0x00000064 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=22 pc=0x00000068 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=23 pc=0x0000006c instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=24 pc=0x00000070 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=25 pc=0x00000074 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=26 pc=0x00000078 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=27 pc=0x0000007c instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=28 pc=0x00000080 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=29 pc=0x00000084 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=30 pc=0x00000088 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=31 pc=0x0000008c instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=32 pc=0x00000090 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=33 pc=0x00000094 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+cycle=34 pc=0x00000098 instr=0xe1a00000 rw=1 wa=R0 wd=0x00000005 mw=0 ma=0x00000005 md=0x00000005 unsupported=0
+
+========== Register checks ==========
+[PASS] R0 = 0x00000005
+[PASS] R1 = 0x00000003
+[PASS] R2 = 0x00000008
+[PASS] R3 = 0x00000002
+[PASS] R4 = 0x00000001
+[PASS] R5 = 0x00000007
+[PASS] R6 = 0x00000008
+[PASS] R7 = 0x00000000
+[PASS] R8 = 0x0000000c
+[PASS] R9 = 0x00000007
+[PASS] R10 = 0x00000000
+[PASS] R11 = 0x0000000c
+[PASS] R14 = 0x0000004c
+
+========== Data memory checks ==========
+[PASS] mem[0] = 0x00000008
+[PASS] mem[1] = 0x00000002
+[PASS] mem[2] = 0x00000001
+[PASS] mem[3] = 0x00000007
+[PASS] mem[4] = 0x0000000c
+[PASS] mem[5] = 0x0000000c
+[PASS] mem[6] = 0x0000004c
+
+========== Summary ==========
+ALL TESTS PASSED.
+$finish called at time : 376 ns : File "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v" Line 130
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mcu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1109.500 ; gain = 34.293
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k160tffg676-2
+Top: mcu_top
+INFO: [Device 21-403] Loading part xc7k160tffg676-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.688 ; gain = 250.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mcu_top' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:33]
+	Parameter PROGRAM_FILE bound to: program.hex - type: string 
+	Parameter PROGRAM_FROM_FILE bound to: 0 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_MEM_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter CLASS_BR bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (1#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v:17]
+INFO: [Synth 8-6157] synthesizing module 'instr_rom' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v:24]
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter INIT_FILE bound to: program.hex - type: string 
+	Parameter USE_INIT_FILE bound to: 0 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'instr_rom' (2#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v:24]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v:24]
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter CLASS_BR bound to: 2'b10 
+	Parameter CLASS_INV bound to: 2'b11 
+	Parameter ALU_AND bound to: 4'b0000 
+	Parameter ALU_SUB bound to: 4'b0010 
+	Parameter ALU_ADD bound to: 4'b0100 
+	Parameter ALU_ORR bound to: 4'b1100 
+	Parameter ALU_MOV bound to: 4'b1101 
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (3#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cond_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'cond_unit' (4#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v:16]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (5#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v:28]
+INFO: [Synth 8-6157] synthesizing module 'operand2_decode' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'operand2_decode' (6#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v:18]
+INFO: [Synth 8-6157] synthesizing module 'alu' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v:18]
+	Parameter ALU_AND bound to: 4'b0000 
+	Parameter ALU_SUB bound to: 4'b0010 
+	Parameter ALU_ADD bound to: 4'b0100 
+	Parameter ALU_ORR bound to: 4'b1100 
+	Parameter ALU_MOV bound to: 4'b1101 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v:18]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v:23]
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (8#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'branch_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'branch_unit' (9#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top' (10#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.504 ; gain = 303.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.504 ; gain = 303.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.504 ; gain = 303.945
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1717.504 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1838.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1983.344 ; gain = 569.785
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1983.344 ; gain = 873.844
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget

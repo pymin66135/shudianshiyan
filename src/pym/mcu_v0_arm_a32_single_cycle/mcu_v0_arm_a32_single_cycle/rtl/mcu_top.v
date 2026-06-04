@@ -103,12 +103,16 @@ wire [31:0] mem_read_data;
 wire is_mem_instr = (instr_class == CLASS_MEM);
 wire is_str_instr = is_mem_instr && raw_mem_write;
 
+//程序计数器
+
 pc_reg u_pc_reg (
     .clk     (clk),
     .rst_n   (rst_n),
     .next_pc (next_pc),
     .pc      (pc)
 );
+
+//指令存储器,可加载外部指令
 
 instr_rom #(
     .ADDR_WIDTH    (INSTR_ROM_ADDR_WIDTH),
@@ -118,6 +122,8 @@ instr_rom #(
     .pc    (pc),
     .instr (instr)
 );
+
+
 
 control_unit u_control_unit (
     .instr       (instr),
@@ -133,11 +139,14 @@ control_unit u_control_unit (
     .unsupported (unsupported_control)
 );
 
+
 cond_unit u_cond_unit (
     .cond      (cond),
     .flags     (flags),
     .cond_pass (cond_pass)
 );
+
+
 
 assign ra1 = rn;
 assign ra2 = is_str_instr ? rd : rm;
@@ -202,9 +211,13 @@ assign effective_reg_write  = raw_reg_write  & cond_pass & ~unsupported_total;
 assign effective_mem_write  = raw_mem_write  & cond_pass & ~unsupported_total;
 assign effective_flag_write = raw_flag_write & cond_pass & ~unsupported_total;
 
+//wd寄存器写啥
+
 assign wb_data = link       ? pc_plus4 :
                  mem_to_reg ? mem_read_data :
                               alu_result;
+
+
 
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
