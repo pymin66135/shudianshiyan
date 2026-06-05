@@ -1,0 +1,49 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto bdc1c0e0f0d2487eb4e3d79c632cb8d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mcu_top_behav xil_defaultlib.tb_mcu_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module xil_defaultlib.sys_clk_sys_clk_clk_wiz
+Compiling module xil_defaultlib.sys_clk
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.instr_rom(INIT_FILE="program.hex...
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.cond_unit
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.operand2_decode
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_mem_default
+Compiling module xil_defaultlib.branch_unit
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.SRLC16E_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.CFGLUT5_default
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.mcu_top(PROGRAM_FILE="program.he...
+Compiling module xil_defaultlib.tb_mcu_top
+Built simulation snapshot tb_mcu_top_behav

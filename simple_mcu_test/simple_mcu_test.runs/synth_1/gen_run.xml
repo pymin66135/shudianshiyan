@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2" LaunchTime="1780587751">
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2" LaunchTime="1780626422">
   <File Type="PA-TCL" Name="mcu_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mcu_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mcu_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="mcu_top.vds"/>
   <File Type="RDS-UTIL" Name="mcu_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="mcu_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="mcu_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mcu_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mcu_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v">

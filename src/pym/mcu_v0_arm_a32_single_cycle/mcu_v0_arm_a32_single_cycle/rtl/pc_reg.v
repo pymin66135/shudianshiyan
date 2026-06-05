@@ -24,7 +24,11 @@ module pc_reg (
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
         pc <= 32'b0;
-    end else begin
+    end 
+    else if(pc >= 32'h00000100) begin
+        pc <= 32'b0;
+    end
+    else begin
         pc <= next_pc;
     end
 end

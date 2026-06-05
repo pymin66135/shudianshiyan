@@ -23,7 +23,7 @@
 
 module instr_rom #(
     parameter ADDR_WIDTH    = 8,
-    parameter INIT_FILE     = "program.hex",
+    parameter INIT_FILE     = "F:\FPGA\shudianshiyan\src\zhx\sort8_u16_v0\sort8_u16_unsigned.hex",
     parameter USE_INIT_FILE = 0
 )(
     input  wire [31:0] pc,

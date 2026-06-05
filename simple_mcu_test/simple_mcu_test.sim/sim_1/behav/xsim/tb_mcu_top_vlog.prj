@@ -1,8 +1,7 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../simple_mcu_test.gen/sources_1/ip/sys_clk" \
-"../../../../simple_mcu_test.gen/sources_1/ip/ila_0/sim/ila_0.v" \
-"../../../../simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_clk_wiz.v" \
-"../../../../simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk.v" \
+verilog xil_defaultlib  \
+"../../../../simple_mcu_test.gen/sources_1/ip/ila_0/ila_0_sim_netlist.v" \
+"../../../../simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v" \
 "../../../../../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v" \
 "../../../../../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v" \
 "../../../../../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v" \

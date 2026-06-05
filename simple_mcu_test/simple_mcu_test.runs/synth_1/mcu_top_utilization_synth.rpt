@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Jun  4 23:43:28 2026
+| Date         : Fri Jun  5 10:27:30 2026
 | Host         : pymin66135 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mcu_top_utilization_synth.rpt -pb mcu_top_utilization_synth.pb
 | Design       : mcu_top
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  792 |     0 |    101400 |  0.78 |
-|   LUT as Logic             |  664 |     0 |    101400 |  0.65 |
+| Slice LUTs*                |  815 |     0 |    101400 |  0.80 |
+|   LUT as Logic             |  687 |     0 |    101400 |  0.68 |
 |   LUT as Memory            |  128 |     0 |     35000 |  0.37 |
 |     LUT as Distributed RAM |  128 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -154,12 +154,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDCE     |  548 |        Flop & Latch |
-| LUT6     |  396 |                 LUT |
+| LUT6     |  397 |                 LUT |
 | MUXF7    |  194 |               MuxFx |
-| LUT4     |  134 |                 LUT |
+| LUT4     |  140 |                 LUT |
+| LUT2     |  129 |                 LUT |
 | RAMS64E  |  128 |  Distributed Memory |
 | MUXF8    |   97 |               MuxFx |
-| LUT2     |   97 |                 LUT |
 | LUT5     |   70 |                 LUT |
 | CARRY4   |   36 |          CarryLogic |
 | LUT3     |   28 |                 LUT |

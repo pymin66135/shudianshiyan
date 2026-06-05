@@ -2,12 +2,12 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jun  4 21:41:20 2026
-# Process ID: 20048
+# Start of session at: Fri Jun  5 09:51:20 2026
+# Process ID: 26256
 # Current directory: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/xsim.dir/mcu_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/xsim.dir/tb_mcu_top_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/xsim.dir/mcu_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Thu Jun  4 21:41:21 2026...
+source F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.sim/sim_1/behav/xsim/xsim.dir/tb_mcu_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  5 09:51:21 2026...

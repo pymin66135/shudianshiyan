@@ -31,7 +31,7 @@
 `timescale 1ns/1ps
 
 module mcu_top #(
-    parameter PROGRAM_FILE         = "program.hex",
+    parameter PROGRAM_FILE         = "F:\FPGA\shudianshiyan\src\zhx\sort8_u16_v0\sort8_u16_unsigned.hex",
     parameter PROGRAM_FROM_FILE    = 0,
     parameter INSTR_ROM_ADDR_WIDTH = 8,
     parameter DATA_MEM_ADDR_WIDTH  = 8
