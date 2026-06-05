@@ -36,21 +36,13 @@ module mcu_top #(
     parameter INSTR_ROM_ADDR_WIDTH = 8,
     parameter DATA_MEM_ADDR_WIDTH  = 8
 )(
-    input  wire        clk,
-    input  wire        rst_n,
-
-    output wire [31:0] debug_pc,
-    output wire [31:0] debug_instr,
-    output wire [31:0] debug_alu_result,
-    output wire [31:0] debug_mem_wdata,
-    output wire [31:0] debug_mem_addr,
-    output wire [31:0] debug_reg_wdata,
-    output wire [3:0]  debug_reg_waddr,
-    output wire        debug_reg_write,
-    output wire        debug_mem_write,
-    output wire [3:0]  debug_flags,
-    output wire        debug_unsupported
+    input  wire        clk_osc,
+    input  wire        rst
 );
+
+wire rst_n;
+assign rst_n = ~rst;
+
 
 localparam CLASS_DP  = 2'b00;
 localparam CLASS_MEM = 2'b01;
@@ -103,7 +95,17 @@ wire [31:0] mem_read_data;
 wire is_mem_instr = (instr_class == CLASS_MEM);
 wire is_str_instr = is_mem_instr && raw_mem_write;
 
-//程序计数器
+wire clk;
+
+   sys_clk u_sys_clk (
+        .clk_out1(clk),         // ????????
+        .clk_in1(clk_osc)       // ??????
+        );
+
+
+
+
+//程�?计数器
 
 pc_reg u_pc_reg (
     .clk     (clk),
@@ -112,7 +114,7 @@ pc_reg u_pc_reg (
     .pc      (pc)
 );
 
-//指令存储器,可加载外部指令
+//指令存储器,�?�加载外部指令
 
 instr_rom #(
     .ADDR_WIDTH    (INSTR_ROM_ADDR_WIDTH),
@@ -229,16 +231,12 @@ always @(posedge clk or negedge rst_n) begin
     end
 end
 
-assign debug_pc          = pc;
-assign debug_instr       = instr;
-assign debug_alu_result  = alu_result;
-assign debug_mem_wdata   = rd2;
-assign debug_mem_addr    = alu_result;
-assign debug_reg_wdata   = wb_data;
-assign debug_reg_waddr   = wa;
-assign debug_reg_write   = effective_reg_write;
-assign debug_mem_write   = effective_mem_write;
-assign debug_flags       = flags;
-assign debug_unsupported = unsupported_total;
+    ila_0 u_ila(
+        .clk(clk), // input wire clk
+        .probe0(instr), // input wire [31:0]  probe0  
+        .probe1(pc), // input wire [3:0]  probe1 
+        .probe2(alu_result)    
+    );
+
 
 endmodule // mcu_top

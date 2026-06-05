@@ -1,0 +1,10 @@
+set_property PACKAGE_PIN G22 [get_ports clk_osc]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_osc]
+set_property PACKAGE_PIN AC3 [get_ports rst]
+set_property IOSTANDARD LVCMOS18 [get_ports rst]
+set_property C_CLK_INPUT_FREQ_HZ 100000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets clk]
+
+#create_clock -period 20.000 -name clk_osc_pin -waveform {0.000 10.000} [get_ports clk_osc]
