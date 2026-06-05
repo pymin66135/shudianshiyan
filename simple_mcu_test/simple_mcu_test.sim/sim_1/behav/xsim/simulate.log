@@ -1,3 +1,9 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
 [100000] Reset released, MCU execution starting...
+[100000] Reset released, MCU execution starting...
+[3100000] Simulation finished.
+$finish called at time : 3100 ns : File "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v" Line 56
+[100000] Reset released, MCU execution starting...
+[3100000] Simulation finished.
+$finish called at time : 3100 ns : File "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v" Line 56

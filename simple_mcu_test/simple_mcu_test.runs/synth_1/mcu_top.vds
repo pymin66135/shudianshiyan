@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jun  5 10:27:04 2026
-# Process ID: 6304
+# Start of session at: Fri Jun  5 11:24:17 2026
+# Process ID: 6568
 # Current directory: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1
 # Command line: vivado.exe -log mcu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mcu_top.tcl
 # Log file: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/mcu_top.vds
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160
 INFO: [Device 21-403] Loading part xc7k160tffg676-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23580
+INFO: [Synth 8-7075] Helper process launched with PID 27324
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1163.098 ; gain = 55.148
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.754 ; gain = 53.594
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mcu_top' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:33]
 	Parameter PROGRAM_FILE bound to: F:FPGAshudianshiyansrczhxsort8_u16_v0sort8_u16_unsigned.hex - type: string 
@@ -29,16 +29,16 @@ INFO: [Synth 8-6157] synthesizing module 'mcu_top' [F:/FPGA/shudianshiyan/src/py
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
 	Parameter CLASS_BR bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'sys_clk' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6304-pymin66135/realtime/sys_clk_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6304-pymin66135/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6568-pymin66135/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6568-pymin66135/realtime/sys_clk_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'pc_reg' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (2#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v:17]
-INFO: [Synth 8-6157] synthesizing module 'instr_rom' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v:24]
+INFO: [Synth 8-6157] synthesizing module 'instr_rom' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v:19]
 	Parameter ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_FILE bound to: F:FPGAshudianshiyansrczhxsort8_u16_v0sort8_u16_unsigned.hex - type: string 
 	Parameter USE_INIT_FILE bound to: 0 - type: integer 
 	Parameter DEPTH bound to: 256 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'instr_rom' (3#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'instr_rom' (3#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v:19]
 INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v:24]
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
@@ -63,15 +63,15 @@ INFO: [Synth 8-6157] synthesizing module 'alu' [F:/FPGA/shudianshiyan/src/pym/mc
 	Parameter ALU_ORR bound to: 4'b1100 
 	Parameter ALU_MOV bound to: 4'b1101 
 INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v:18]
-INFO: [Synth 8-6157] synthesizing module 'data_mem' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v:19]
 	Parameter ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter DEPTH bound to: 256 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'data_mem' (9#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (9#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v:19]
 INFO: [Synth 8-6157] synthesizing module 'branch_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'branch_unit' (10#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v:20]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:234]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6304-pymin66135/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (11#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6304-pymin66135/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6568-pymin66135/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (11#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-6568-pymin66135/realtime/ila_0_stub.v:6]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_instr_rom'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:123]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:234]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_branch_unit'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:200]
@@ -80,22 +80,21 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_reg_file'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:157]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_cond_unit'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:145]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_pc_reg'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:110]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_alu'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:182]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_data_mem'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:192]
 INFO: [Synth 8-6155] done synthesizing module 'mcu_top' (12#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v:33]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1221.152 ; gain = 113.203
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1220.148 ; gain = 110.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1221.152 ; gain = 113.203
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1220.148 ; gain = 110.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1221.152 ; gain = 113.203
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1220.148 ; gain = 110.988
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1221.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1220.148 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -110,20 +109,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/mcu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1350.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1341.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1350.590 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1341.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1350.590 ; gain = 242.641
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1341.008 ; gain = 231.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1350.590 ; gain = 242.641
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1341.008 ; gain = 231.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -133,10 +132,10 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_osc. (constraint file  f:/
 Applied set_property KEEP_HIERARCHY = SOFT for u_ila. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for u_sys_clk. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1350.590 ; gain = 242.641
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1341.008 ; gain = 231.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1350.590 ; gain = 242.641
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1341.008 ; gain = 231.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -178,7 +177,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1350.590 ; gain = 242.641
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1341.008 ; gain = 231.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -199,13 +198,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1350.590 ; gain = 242.641
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1341.008 ; gain = 231.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -225,7 +224,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -243,37 +242,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -295,11 +294,11 @@ Report Cell Usage:
 |2     |sys_clk   |     1|
 |3     |CARRY4    |    36|
 |4     |LUT1      |     4|
-|5     |LUT2      |   129|
-|6     |LUT3      |    28|
-|7     |LUT4      |   140|
-|8     |LUT5      |    70|
-|9     |LUT6      |   397|
+|5     |LUT2      |    72|
+|6     |LUT3      |     8|
+|7     |LUT4      |   165|
+|8     |LUT5      |   116|
+|9     |LUT6      |   462|
 |10    |MUXF7     |   130|
 |11    |MUXF8     |    65|
 |12    |RAM256X1S |    32|
@@ -307,26 +306,28 @@ Report Cell Usage:
 |14    |IBUF      |     1|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1417.844 ; gain = 180.457
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1417.844 ; gain = 309.895
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1413.184 ; gain = 183.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.184 ; gain = 304.023
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1426.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1419.035 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1426.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1426.102 ; gain = 318.152
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.035 ; gain = 309.875
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/mcu_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mcu_top_utilization_synth.rpt -pb mcu_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 10:27:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 11:24:47 2026...

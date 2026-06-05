@@ -235,7 +235,7 @@ end
         .clk(clk), // input wire clk
         .probe0(instr), // input wire [31:0]  probe0  
         .probe1(pc), // input wire [3:0]  probe1 
-        .probe2(alu_result)    
+        .probe2(rd2)    
     );
 
 
