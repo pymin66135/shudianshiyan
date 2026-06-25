@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri Jun  5 10:05:20 2026
+// Date        : Thu Jun 25 19:28:02 2026
 // Host        : pymin66135 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v
@@ -78,12 +78,12 @@ module sys_clk_sys_clk_clk_wiz
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(20.000000),
+    .CLKFBOUT_MULT_F(19.500000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(20.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(10.000000),
+    .CLKOUT0_DIVIDE_F(8.125000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),

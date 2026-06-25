@@ -1,0 +1,14 @@
+
+*** Running vivado
+    with args -log test_ROM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_ROM.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source test_ROM.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP test_ROM, cache-ID = 037e229b6f41efcd.
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 25 17:30:30 2026...

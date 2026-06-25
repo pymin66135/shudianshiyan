@@ -1,154 +1,40 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/ila_0/ila_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ila_0
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_cap_addrgen
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_cap_ctrl_legacy
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_cap_sample_counter
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_cap_window_counter
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_core
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_register
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_reset_ctrl
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_trace_memory
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_trig_match
-INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_11_ila_trigger
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized0_11
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized0_5
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized1
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized1_42
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized1_50
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_15
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_16
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_9
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_12
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_13
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_14
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_2
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_3
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_6
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_7
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_8
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized1
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized1_43
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized1_51
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized2
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized2_44
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized2_52
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized0_10
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized0_4
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA_nodelay
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA_nodelay_41
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA_nodelay_49
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer_17
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer_18
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer_19
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut4
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut4_45
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut5
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut5_39
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut5_46
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut6
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut6_47
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut6__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut7
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut7_38
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_generic_memrd
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized0_0
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized0_1
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match_nodelay
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match_nodelay_40
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match_nodelay_48
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_rising_edge_detection
-INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_rising_edge_detection_20
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized15
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized16
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized17
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized18
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized30
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized31
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized32
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized33
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized34
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized35
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized36
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized37
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized38
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized39
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized40
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized41
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized43
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized45
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized48
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_24
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_25
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_26
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_27
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_30
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_32
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_33
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_34
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_35
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_36
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized1
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized1_28
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized1_31
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized1
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized2
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized3
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_21
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_22
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_23
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_29
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_37
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stream
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stream__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_xsdbs
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width__parameterized1
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper__parameterized0
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper__parameterized1
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_top
-INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_synth
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sys_clk
-INFO: [VRFC 10-311] analyzing module sys_clk_sys_clk_clk_wiz
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/verify_RAM/sim/verify_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module verify_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/sim/test_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/alu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module alu
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/branch_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module branch_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cnt_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cond_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cond_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/control_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/data_mem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module data_mem
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/instr_rom.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module instr_rom
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/mcu_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mcu_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/operand2_decode.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module operand2_decode
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/pc_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pc_reg
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/reg_file.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module reg_file
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_mcu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3380] identifier 'ext_mem_rdata' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/top.v:94]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/tb/tb_top_v1_smoke.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_v1_full64
+INFO: [VRFC 10-311] analyzing module sys_clk
+INFO: [VRFC 10-311] analyzing module test_ROM
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'test_ROM' [F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/tb/tb_top_v1_smoke.v:133]
+INFO: [VRFC 10-311] analyzing module verify_RAM
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'verify_RAM' [F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/tb/tb_top_v1_smoke.v:162]
+INFO: [VRFC 10-311] analyzing module ila_0
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ila_0' [F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/tb/tb_top_v1_smoke.v:196]

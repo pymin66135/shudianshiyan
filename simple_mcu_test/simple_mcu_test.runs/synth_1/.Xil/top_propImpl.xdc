@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/constrs_1/new/xdc.xdc rfile:../../../simple_mcu_test.srcs/constrs_1/new/xdc.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G22 [get_ports clk_osc]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AC3 [get_ports rst]

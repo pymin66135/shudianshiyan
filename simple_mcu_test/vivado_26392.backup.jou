@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 25 16:33:00 2026
+# Process ID: 26392
+# Current directory: F:/FPGA/shudianshiyan/simple_mcu_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10700 F:\FPGA\shudianshiyan\simple_mcu_test\simple_mcu_test.xpr
+# Log file: F:/FPGA/shudianshiyan/simple_mcu_test/vivado.log
+# Journal file: F:/FPGA/shudianshiyan/simple_mcu_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cnt_test.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cnt_test.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v] -no_script -reset -force -quiet
+remove_files  F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/tb/mcu_top_tb.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files F:/FPGA/shudianshiyan/src/zhx/sort8_u16_v0/tb_sort8_u16.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/FPGA/shudianshiyan/src/zhx/sort8_u16_v0/tb_sort8_u16.v
+add_files -norecurse {F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/instr_rom.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/alu.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cnt_test.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/pc_reg.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cond_unit.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/control_unit.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/top.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/branch_unit.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/mcu_top.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/data_mem.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/reg_file.v F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/operand2_decode.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/tb/tb_top_v1_smoke.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_top_v1_smoke.tcl
+restart
+run all
+add_files -norecurse F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/instr_rom.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/sort64_signed.hex
+close_sim
+launch_simulation
+source tb_top_v1_smoke.tcl
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/tb_top_v1_smoke/dut/debug_pc}} 
+restart
+run 5000 ns
+run all
+restart
+run all
+run all
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+reset_project -exclude ip
+reset_project -exclude ips
+reset_project -exclude_ips
+launch_simulation

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 25 17:30:24 2026
+# Process ID: 27668
+# Current directory: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/verify_RAM_synth_1
+# Command line: vivado.exe -log verify_RAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source verify_RAM.tcl
+# Log file: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/verify_RAM_synth_1/verify_RAM.vds
+# Journal file: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/verify_RAM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source verify_RAM.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP verify_RAM, cache-ID = 1846fdb26d57a8f1.
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 25 17:30:30 2026...

@@ -1,89 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2" LaunchTime="1780629801">
-  <File Type="PA-TCL" Name="mcu_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mcu_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="mcu_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="mcu_top.vds"/>
-  <File Type="RDS-UTIL" Name="mcu_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="mcu_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="mcu_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mcu_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mcu_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2" LaunchTime="1782387763">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/alu.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/alu.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/branch_unit.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/branch_unit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cond_unit.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cnt_test.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/control_unit.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cond_unit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/data_mem.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/control_unit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/instr_rom.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/data_mem.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/operand2_decode.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/instr_rom.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/pc_reg.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/mcu_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/reg_file.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/operand2_decode.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/mcu_top.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/pc_reg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/rtl/cnt_test.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/reg_file.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/top.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -97,7 +103,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="mcu_top"/>
+      <Option Name="TopModule" Val="top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -123,6 +129,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="test_ROM"/>
   <BlockFileSet Type="BlockSrcs" Name="sys_clk"/>
+  <BlockFileSet Type="BlockSrcs" Name="verify_RAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
 </GenRun>
