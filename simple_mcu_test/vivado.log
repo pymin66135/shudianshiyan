@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jun 25 19:26:54 2026
-# Process ID: 25596
+# Start of session at: Sat Jul  4 13:49:24 2026
+# Process ID: 4676
 # Current directory: F:/FPGA/shudianshiyan/simple_mcu_test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25008 F:\FPGA\shudianshiyan\simple_mcu_test\simple_mcu_test.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26996 F:\FPGA\shudianshiyan\simple_mcu_test\simple_mcu_test.xpr
 # Log file: F:/FPGA/shudianshiyan/simple_mcu_test/vivado.log
 # Journal file: F:/FPGA/shudianshiyan/simple_mcu_test\vivado.jou
 #-----------------------------------------------------------
@@ -16,50 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_sim_netlist.vhdl'. Please regenerate to continue.
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Thu Jun 25 19:27:34 2026] Launched sys_clk_synth_1, synth_1...
-Run output will be captured here:
-sys_clk_synth_1: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/sys_clk_synth_1/runme.log
-synth_1: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/runme.log
-[Thu Jun 25 19:27:35 2026] Launched impl_1...
-Run output will be captured here: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7k160tffg676-2
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1516.656 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 294 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2020.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.284 . Memory (MB): peak = 2236.961 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.284 . Memory (MB): peak = 2236.961 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2236.961 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 142 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 76 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 50 instances
-  RAM64X1D => RAM64X1D (RAMD64E(x2)): 10 instances
-
-open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2394.461 ; gain = 1107.547
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1111.738 ; gain = 0.000
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -74,51 +31,13 @@ current_hw_device [get_hw_devices xc7k160t_0]
 refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
 INFO: [Labtools 27-2302] Device xc7k160t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
-set_property FULL_PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
-set_property PROGRAM.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
-program_hw_devices [get_hw_devices xc7k160t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
-INFO: [Labtools 27-2302] Device xc7k160t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jun-25 19:31:21
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jun-25 19:31:25
-INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Jul  4 13:50:49 2026] Launched impl_1...
+Run output will be captured here: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/runme.log
 save_wave_config {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
 close_hw_manager
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1
-
-launch_runs impl_1 -jobs 8
-[Thu Jun 25 19:42:43 2026] Launched synth_1...
-Run output will be captured here: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/runme.log
-[Thu Jun 25 19:42:43 2026] Launched impl_1...
-Run output will be captured here: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Thu Jun 25 19:45:22 2026] Launched impl_1...
-Run output will be captured here: F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/runme.log
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 4169.965 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2020.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.334 . Memory (MB): peak = 4169.965 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.335 . Memory (MB): peak = 4169.965 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 4169.965 ; gain = 15.508
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -127,31 +46,108 @@ INFO: [Labtools 27-3414] Connected to existing cs_server.
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
 set_property PROGRAM.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
 set_property PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
 set_property FULL_PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
-set_property PROGRAM.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
-program_hw_devices [get_hw_devices xc7k160t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
+current_hw_device [get_hw_devices xc7k160t_0]
 refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
 INFO: [Labtools 27-2302] Device xc7k160t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+get_hw_ilas
+hw_ila_1
+set_property TRIGGER_COMPARE_VALUE eq3'h1 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jun-25 19:46:22
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:01:22
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jun-25 19:46:25
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:01:24
 INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:01:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:01:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq3'h2 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:01:50
+set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Jul-04 14:02:17
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:02:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:02:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:02:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:02:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq3'h4 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:02:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:02:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq3'u4 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'u7 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:03:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:03:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:03:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:03:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq3'b111 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'h7 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jun-25 19:46:40
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:04:22
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jun-25 19:46:43
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:04:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq3'h4 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:04:54
+set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE {eq3'h5 eq3'hX} [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE {eq3'h5 eq3'h6} [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Jul-04 14:06:29
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+ERROR: [Labtools 27-3239] Trigger needs too many comparators for ILA port(index=3). Port has 1 comparators available, but 2 are needed for compare values:
+	state[2:0]==3'h5
+	state[2:0]==3'h6
+ERROR: [Labtools 27-3241] Unable to fit compare values for hw_ila 'hw_ila_1'.
+Multiple compare values for the same ILA trigger port, can only be merged into the same comparator if 1) the overall trigger condition is 'AND', 'NAND' and 2) the compare value operator for multi-bit hw_probes is 'eq'.
+set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:06:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:06:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.DATA_DEPTH 16384 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Jul-04 14:07:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Jul-04 14:07:05
 INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 save_wave_config {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 25 19:49:51 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  4 14:07:39 2026...

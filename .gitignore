@@ -1,0 +1,42 @@
+# ============================================================
+# Vivado Project — 自动生成产物 (Auto-generated artifacts)
+# ============================================================
+
+# Vivado 运行/编译输出目录
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.gen/
+*.srcs/
+*.ioplanning/
+
+# Vivado 日志文件 (journal / log)
+vivado.jou
+vivado.log
+vivado_*.backup.jou
+vivado_*.backup.log
+
+# Vivado 策略 / 临时文件
+vivado_*.str
+vivado_*.zip
+vivado_pid*.zip
+vivado_pid*.str
+
+# Vivado 硬件工程文件 (可选保留; 如需用 .xpr 分享工程, 请注释下面这行)
+# *.xpr
+
+# Vivado 约束文件 (可选保留; 如需用 .xdc 分享约束, 请注释下面这行)
+# *.xdc
+
+# ============================================================
+# 通用 / 操作系统
+# ============================================================
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
+*.swp
+*.swo

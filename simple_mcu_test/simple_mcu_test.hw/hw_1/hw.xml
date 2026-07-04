@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7k160t_0" gui_info="dashboard1=hw_ila_1[xc7k160t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k160t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k160t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7k160t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <device name="xc7k160t_0" gui_info="dashboard1=hw_ila_1[xc7k160t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k160t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k160t_0/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7k160t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/top.ltx"/>
@@ -19,7 +19,10 @@
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="u_ila" gui_info="">
-      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.DATA_DEPTH" value="16384"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="OR"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="8191"/>
+      <Properties Property="CONTROL.WINDOW_COUNT" value="1"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
   </ObjectList>
@@ -122,7 +125,7 @@
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq20&apos;hX_XXXX"/>
-        <Option Id="WAVEFORM_STYLE" value="Analog"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
         <net name="cnt_test[19]"/>
@@ -148,6 +151,58 @@
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="debug_pc0[31]"/>
+        <net name="debug_pc0[30]"/>
+        <net name="debug_pc0[29]"/>
+        <net name="debug_pc0[28]"/>
+        <net name="debug_pc0[27]"/>
+        <net name="debug_pc0[26]"/>
+        <net name="debug_pc0[25]"/>
+        <net name="debug_pc0[24]"/>
+        <net name="debug_pc0[23]"/>
+        <net name="debug_pc0[22]"/>
+        <net name="debug_pc0[21]"/>
+        <net name="debug_pc0[20]"/>
+        <net name="debug_pc0[19]"/>
+        <net name="debug_pc0[18]"/>
+        <net name="debug_pc0[17]"/>
+        <net name="debug_pc0[16]"/>
+        <net name="debug_pc0[15]"/>
+        <net name="debug_pc0[14]"/>
+        <net name="debug_pc0[13]"/>
+        <net name="debug_pc0[12]"/>
+        <net name="debug_pc0[11]"/>
+        <net name="debug_pc0[10]"/>
+        <net name="debug_pc0[9]"/>
+        <net name="debug_pc0[8]"/>
+        <net name="debug_pc0[7]"/>
+        <net name="debug_pc0[6]"/>
+        <net name="debug_pc0[5]"/>
+        <net name="debug_pc0[4]"/>
+        <net name="debug_pc0[3]"/>
+        <net name="debug_pc0[2]"/>
+        <net name="debug_pc0[1]"/>
+        <net name="debug_pc0[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -373,10 +428,7 @@
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
         <Option Id="ENUM.ST_DONE" value="eq3&apos;b111"/>
         <Option Id="ENUM.ST_IDLE" value="eq3&apos;b000"/>
-        <Option Id="ENUM.ST_LOAD_REQ" value="eq3&apos;b001"/>
-        <Option Id="ENUM.ST_LOAD_WAIT1" value="eq3&apos;b010"/>
-        <Option Id="ENUM.ST_LOAD_WAIT2" value="eq3&apos;b011"/>
-        <Option Id="ENUM.ST_LOAD_WRITE" value="eq3&apos;b100"/>
+        <Option Id="ENUM.ST_LOAD_STREAM" value="eq3&apos;b001"/>
         <Option Id="ENUM.ST_RUN" value="eq3&apos;b101"/>
         <Option Id="ENUM.ST_WRITE" value="eq3&apos;b110"/>
       </probeOptions>

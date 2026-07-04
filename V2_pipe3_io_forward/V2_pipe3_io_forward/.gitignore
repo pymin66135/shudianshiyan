@@ -1,0 +1,8 @@
+vivado_project/
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+*.pb

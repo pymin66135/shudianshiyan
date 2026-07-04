@@ -1,0 +1,15 @@
+MCU V2 PIPE3 Minimal package
+
+Key files:
+- rtl/mcu_top.v                  : V2 3-stage pipeline core, module name mcu_top
+- rtl/mcu_top_v1_single_cycle.v  : original V1 single-cycle core backup
+- rtl/top.v                      : V1 external wrapper, unchanged
+- tb/tb_top_v2_pipe3_full64.v    : V2 full64 testbench with 5-probe ILA stub
+- doc/README_V2_PIPE3_minimal.md : design explanation
+- sort64_signed.hex              : current sort64 program from V1 package
+
+Confirmed constraints:
+- top.v unchanged
+- data_mem combinational read kept
+- debug_pc reports WB/commit PC
+- only current V1 ARM subset guaranteed

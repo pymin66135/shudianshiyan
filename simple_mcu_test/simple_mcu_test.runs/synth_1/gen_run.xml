@@ -1,94 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2" LaunchTime="1782387763">
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2" LaunchTime="1783141734">
   <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
   <File Type="RDS-RDS" Name="top.vds"/>
   <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/alu.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/alu.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/branch_unit.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/cnt_test.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cnt_test.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/cond_unit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cond_unit.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/control_unit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/control_unit.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/global_rf_4w4r.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/data_mem.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/mcu_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/instr_rom.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/operand2_decode.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/mcu_top.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/pc_reg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/operand2_decode.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/reg_file.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/pc_reg.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/reg_file.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/top.v">
+    <File Path="$PPRDIR/../src/pym/mcu_v3_5/rtl/top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

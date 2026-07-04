@@ -73,6 +73,7 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2
 
@@ -91,18 +92,16 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/coe/test_rom.coe
 read_verilog -library xil_defaultlib {
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/alu.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/branch_unit.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cnt_test.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/cond_unit.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/control_unit.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/data_mem.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/instr_rom.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/mcu_top.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/operand2_decode.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/pc_reg.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/reg_file.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v1_external_wrapper/mcu_v1_external_wrapper/rtl/top.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/alu.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cnt_test.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cond_unit.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/control_unit.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/global_rf_4w4r.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/operand2_decode.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/pc_reg.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/reg_file.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v
 }
 read_ip -quiet F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci
 set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM_ooc.xdc]
