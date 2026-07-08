@@ -73,7 +73,6 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2
 
@@ -91,20 +90,23 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/coe/test_rom.coe
+add_files c:/Users/22790/Desktop/sort_input_103.coe
 read_verilog -library xil_defaultlib {
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/alu.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cnt_test.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cond_unit.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/control_unit.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/global_rf_4w4r.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/operand2_decode.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/pc_reg.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/reg_file.v
-  F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/alu.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cnt_test.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cond_unit.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/control_unit.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/global_rf_32w32r.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/operand2_decode.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/pc_reg.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/reg_file.v
+  F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v
 }
-read_ip -quiet F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci
-set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_board.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk.xdc]
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
 
 read_ip -quiet F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci
 set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/verify_RAM/verify_RAM_ooc.xdc]
@@ -115,10 +117,8 @@ set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/
 set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
 
-read_ip -quiet F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci
-set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_board.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
+read_ip -quiet F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci
+set_property used_in_implementation false [get_files -all f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -136,7 +136,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top top -part xc7k160tffg676-2
+synth_design -top top -part xc7k160tffg676-2 -flatten_hierarchy none
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

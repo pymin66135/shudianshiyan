@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_v5_32core_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_v5_32core" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2390571fs"></ZoomStartTime>
+      <ZoomEndTime time="2568372fs"></ZoomEndTime>
+      <Cursor1Time time="2424285fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="246"></NameColumnWidth>
+      <ValueColumnWidth column_width="117"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_global_rf/regs" type="array">
+      <obj_property name="ElementShortName">regs[0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[0:63][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_cnt_test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_cnt_test/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_cnt_test/start_flag" type="logic">
+      <obj_property name="ElementShortName">start_flag</obj_property>
+      <obj_property name="ObjectShortName">start_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_cnt_test/stop_flag" type="logic">
+      <obj_property name="ElementShortName">stop_flag</obj_property>
+      <obj_property name="ObjectShortName">stop_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_cnt_test/cnt_test" type="array">
+      <obj_property name="ElementShortName">cnt_test[19:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_test[19:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_cnt_test/is_running" type="logic">
+      <obj_property name="ElementShortName">is_running</obj_property>
+      <obj_property name="ObjectShortName">is_running</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/u_global_rf/regs" type="array">
+      <obj_property name="ElementShortName">regs[0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[0:63][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/verify_vector_out" type="array">
+      <obj_property name="ElementShortName">verify_vector_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">verify_vector_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_v5_32core/dut/test_vector_in" type="array">
+      <obj_property name="ElementShortName">test_vector_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">test_vector_in[15:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -18,16 +18,16 @@ module tb_top_v35_simple;
 //------------------------------------------------------------
 // ???? (??????????? PC ??????? Hex/????????)
 //------------------------------------------------------------
-//localparam [31:0] DONE_PC0 = 32'h000005C0;
-//localparam [31:0] DONE_PC1 = 32'h000005C0;
-//localparam [31:0] DONE_PC2 = 32'h000005C0;
-//localparam [31:0] DONE_PC3 = 32'h000005C0;
+//localparam [31:0] DONE_PC0 = 32'h00000AB0;
+//localparam [31:0] DONE_PC1 = 32'h00000AB0;
+//localparam [31:0] DONE_PC2 = 32'h00000AB0;
+//localparam [31:0] DONE_PC3 = 32'h00000AB0;
 
 
-localparam [31:0] DONE_PC0 = 32'h00000A3C;
-localparam [31:0] DONE_PC1 = 32'h00000A28;
-localparam [31:0] DONE_PC2 = 32'h00000A28;
-localparam [31:0] DONE_PC3 = 32'h00000A28;
+localparam [31:0] DONE_PC0 = 32'h00000AC8;
+localparam [31:0] DONE_PC1 = 32'h00000AC8;
+localparam [31:0] DONE_PC2 = 32'h00000AC8;
+localparam [31:0] DONE_PC3 = 32'h00000AC8;
 //------------------------------------------------------------
 // ????
 //------------------------------------------------------------

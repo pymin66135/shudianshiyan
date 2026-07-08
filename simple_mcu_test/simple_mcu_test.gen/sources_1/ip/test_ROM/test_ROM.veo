@@ -58,7 +58,11 @@ test_ROM your_instance_name (
   .clka(clka),    // input wire clka
   .ena(ena),      // input wire ena
   .addra(addra),  // input wire [5 : 0] addra
-  .douta(douta)  // output wire [15 : 0] douta
+  .douta(douta),  // output wire [15 : 0] douta
+  .clkb(clkb),    // input wire clkb
+  .enb(enb),      // input wire enb
+  .addrb(addrb),  // input wire [5 : 0] addrb
+  .doutb(doutb)  // output wire [15 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

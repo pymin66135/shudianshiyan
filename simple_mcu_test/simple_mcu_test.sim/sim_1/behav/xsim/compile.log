@@ -8,26 +8,28 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_te
 INFO: [VRFC 10-311] analyzing module sys_clk_clk_wiz
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sys_clk
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/alu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module alu
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cnt_test.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cnt_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cnt_test
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cond_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cond_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cond_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/control_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/global_rf_4w4r.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module global_rf_4w4r
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/global_rf_32w32r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_rf_32w32r
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mcu_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/operand2_decode.v" into library xil_defaultlib
+WARNING: [VRFC 10-3380] identifier 'id_pc' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:96]
+WARNING: [VRFC 10-3380] identifier 'if_id_valid' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:97]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/operand2_decode.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module operand2_decode
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/pc_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pc_reg
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/reg_file.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module reg_file
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-WARNING: [VRFC 10-3380] identifier 'gprf_rdata0' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:114]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/tb/tb_top_v35_quad_core.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_top_v35_simple
+WARNING: [VRFC 10-3380] identifier 'gprf_rdata0' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA/shudianshiyan/src/pym/mcu_v6/tb/tb_top_v5_32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_v5_32core

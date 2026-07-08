@@ -10,52 +10,90 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-Command: synth_design -top top -part xc7k160tffg676-2
+Command: synth_design -top top -part xc7k160tffg676-2 -flatten_hierarchy none
 Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci
+
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: [Device 21-403] Loading part xc7k160tffg676-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26684
-WARNING: [Synth 8-6901] identifier 'gprf_rdata0' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:114]
+INFO: [Synth 8-7075] Helper process launched with PID 25528
+WARNING: [Synth 8-6901] identifier 'id_pc' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:96]
+WARNING: [Synth 8-6901] identifier 'id_instr' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:96]
+WARNING: [Synth 8-6901] identifier 'id_instr' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:96]
+WARNING: [Synth 8-6901] identifier 'if_id_valid' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:97]
+WARNING: [Synth 8-6901] identifier 'id_branch' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:97]
+WARNING: [Synth 8-6901] identifier 'id_cond_pass' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:97]
+WARNING: [Synth 8-6901] identifier 'gprf_rdata0' is used before its declaration [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:91]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1163.508 ; gain = 52.609
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1163.984 ; gain = 57.520
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:31]
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:14]
 	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
 	Parameter N_DATA bound to: 64 - type: integer 
-	Parameter DONE_PC_CORE0 bound to: 2620 - type: integer 
-	Parameter DONE_PC_CORE1 bound to: 2600 - type: integer 
-	Parameter DONE_PC_CORE2 bound to: 2600 - type: integer 
-	Parameter DONE_PC_CORE3 bound to: 2600 - type: integer 
+	Parameter DONE_PC_CORE00 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE01 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE02 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE03 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE04 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE05 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE06 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE07 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE08 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE09 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE10 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE11 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE12 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE13 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE14 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE15 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE16 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE17 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE18 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE19 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE20 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE21 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE22 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE23 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE24 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE25 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE26 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE27 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE28 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE29 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE30 bound to: 504 - type: integer 
+	Parameter DONE_PC_CORE31 bound to: 504 - type: integer 
 	Parameter ST_IDLE bound to: 3'b000 
 	Parameter ST_LOAD_STREAM bound to: 3'b001 
 	Parameter ST_RUN bound to: 3'b101 
 	Parameter ST_WRITE bound to: 3'b110 
 	Parameter ST_DONE bound to: 3'b111 
+	Parameter LAST_PAIR_BASE bound to: 6'b111110 
 	Parameter LAST_INDEX bound to: 6'b111111 
-INFO: [Synth 8-6157] synthesizing module 'sys_clk' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/sys_clk_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/sys_clk_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'test_ROM' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/test_ROM_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'test_ROM' (2#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/test_ROM_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'verify_RAM' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/verify_RAM_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'verify_RAM' (3#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/verify_RAM_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'global_rf_4w4r' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/global_rf_4w4r.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'global_rf_4w4r' (4#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/global_rf_4w4r.v:14]
-INFO: [Synth 8-6157] synthesizing module 'mcu_top' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'test_ROM' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/test_ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'test_ROM' (2#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/test_ROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'verify_RAM' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/verify_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'verify_RAM' (3#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/verify_RAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'global_rf_32w32r' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/global_rf_32w32r.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'global_rf_32w32r' (4#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/global_rf_32w32r.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
 	Parameter CORE_ID bound to: 0 - type: integer 
 	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
-	Parameter PROGRAM_FILE bound to: F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_0.hex - type: string 
-	Parameter DONE_PC bound to: 2620 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_00.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
 	Parameter NOP_INSTR bound to: -509607936 - type: integer 
 	Parameter ROM_DEPTH bound to: 4096 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_0.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:391]
-INFO: [Synth 8-6157] synthesizing module 'pc_reg' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/pc_reg.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (5#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/pc_reg.v:10]
-INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/control_unit.v:13]
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_00.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/pc_reg.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (5#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/pc_reg.v:10]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/control_unit.v:14]
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
 	Parameter CLASS_INV bound to: 2'b11 
@@ -65,126 +103,421 @@ INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/FPGA/shudianshiyan/s
 	Parameter ALU_ORR bound to: 4'b1100 
 	Parameter ALU_MOV bound to: 4'b1101 
 	Parameter OP_CMP bound to: 4'b1010 
-INFO: [Synth 8-6155] done synthesizing module 'control_unit' (6#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/control_unit.v:13]
-INFO: [Synth 8-6157] synthesizing module 'reg_file' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/reg_file.v:15]
-INFO: [Synth 8-6155] done synthesizing module 'reg_file' (7#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/reg_file.v:15]
-INFO: [Synth 8-6157] synthesizing module 'operand2_decode' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/operand2_decode.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'operand2_decode' (8#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/operand2_decode.v:12]
-INFO: [Synth 8-6157] synthesizing module 'alu' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/alu.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (6#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/control_unit.v:14]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/reg_file.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (7#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/reg_file.v:15]
+INFO: [Synth 8-6157] synthesizing module 'operand2_decode' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/operand2_decode.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'operand2_decode' (8#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/operand2_decode.v:12]
+INFO: [Synth 8-6157] synthesizing module 'alu' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/alu.v:17]
 	Parameter ALU_AND bound to: 4'b0000 
 	Parameter ALU_SUB bound to: 4'b0010 
 	Parameter ALU_ADD bound to: 4'b0100 
 	Parameter ALU_ORR bound to: 4'b1100 
 	Parameter ALU_MOV bound to: 4'b1101 
-INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/alu.v:17]
-INFO: [Synth 8-6157] synthesizing module 'cond_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cond_unit.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'cond_unit' (10#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cond_unit.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'mcu_top' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized0' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/alu.v:17]
+INFO: [Synth 8-6157] synthesizing module 'cond_unit' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cond_unit.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cond_unit' (10#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cond_unit.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized0' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
 	Parameter CORE_ID bound to: 1 - type: integer 
 	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
-	Parameter PROGRAM_FILE bound to: F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_1.hex - type: string 
-	Parameter DONE_PC bound to: 2600 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_01.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
 	Parameter NOP_INSTR bound to: -509607936 - type: integer 
 	Parameter ROM_DEPTH bound to: 4096 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_1.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:391]
-INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized0' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized1' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_01.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized0' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized1' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
 	Parameter CORE_ID bound to: 2 - type: integer 
 	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
-	Parameter PROGRAM_FILE bound to: F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_2.hex - type: string 
-	Parameter DONE_PC bound to: 2600 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_02.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
 	Parameter NOP_INSTR bound to: -509607936 - type: integer 
 	Parameter ROM_DEPTH bound to: 4096 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_2.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:391]
-INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized1' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized2' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_02.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized1' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized2' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
 	Parameter CORE_ID bound to: 3 - type: integer 
 	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
-	Parameter PROGRAM_FILE bound to: F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_3.hex - type: string 
-	Parameter DONE_PC bound to: 2600 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_03.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
 	Parameter CLASS_DP bound to: 2'b00 
 	Parameter CLASS_MEM bound to: 2'b01 
 	Parameter NOP_INSTR bound to: -509607936 - type: integer 
 	Parameter ROM_DEPTH bound to: 4096 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/programs/core_3.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:391]
-INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized2' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/mcu_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'cnt_test' [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cnt_test.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'cnt_test' (12#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/cnt_test.v:9]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:438]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (13#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-13464-pymin66135/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_test_ROM'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:95]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:438]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_global_rf'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:161]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_verify_RAM'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:116]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_cnt_test'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:321]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_core0'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:199]
-INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v3_5/rtl/top.v:31]
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_03.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized2' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized3' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 4 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_04.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_04.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized3' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized4' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 5 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_05.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_05.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized4' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized5' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 6 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_06.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_06.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized5' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized6' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 7 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_07.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_07.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized6' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized7' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 8 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_08.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_08.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized7' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized8' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 9 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_09.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_09.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized8' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized9' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 10 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_10.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_10.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized9' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized10' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 11 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_11.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_11.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized10' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized11' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 12 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_12.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_12.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized11' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized12' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 13 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_13.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_13.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized12' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized13' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 14 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_14.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_14.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized13' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized14' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 15 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_15.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_15.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized14' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized15' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 16 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_16.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_16.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized15' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized16' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 17 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_17.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_17.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized16' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized17' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 18 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_18.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_18.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized17' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized18' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 19 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_19.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_19.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized18' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized19' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 20 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_20.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_20.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized19' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized20' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 21 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_21.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_21.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized20' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized21' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 22 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_22.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_22.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized21' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized22' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 23 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_23.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_23.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized22' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized23' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 24 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_24.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_24.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized23' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized24' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 25 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_25.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_25.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized24' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized25' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 26 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_26.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_26.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized25' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized26' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 27 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_27.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_27.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized26' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized27' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 28 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_28.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_28.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized27' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized28' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 29 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_29.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_29.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized28' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized29' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 30 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_30.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_30.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized29' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mcu_top__parameterized30' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+	Parameter CORE_ID bound to: 31 - type: integer 
+	Parameter INSTR_ROM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PROGRAM_FILE bound to: f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_31.hex - type: string 
+	Parameter DONE_PC bound to: 504 - type: integer 
+	Parameter CLASS_DP bound to: 2'b00 
+	Parameter CLASS_MEM bound to: 2'b01 
+	Parameter NOP_INSTR bound to: -509607936 - type: integer 
+	Parameter ROM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'f:/FPGA/shudianshiyan/src/pym/mcu_v6/programs/core_31.hex' is read successfully [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'mcu_top__parameterized30' (11#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/mcu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cnt_test' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cnt_test.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnt_test' (12#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/cnt_test.v:9]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:1059]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (13#1) [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/.Xil/Vivado-25288-pymin66135/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_test_ROM'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:80]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:1059]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_global_rf'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:519]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_cnt_test'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:1012]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_core0'. This will prevent further optimization [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:655]
+INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [F:/FPGA/shudianshiyan/src/pym/mcu_v6/rtl/top.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1267.270 ; gain = 156.371
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1602.434 ; gain = 495.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1267.270 ; gain = 156.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1622.766 ; gain = 516.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1267.270 ; gain = 156.371
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1622.766 ; gain = 516.301
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1267.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.533 . Memory (MB): peak = 1622.766 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM/test_ROM_in_context.xdc] for cell 'u_test_ROM'
-Finished Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM/test_ROM_in_context.xdc] for cell 'u_test_ROM'
+Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'u_sys_clk'
+Finished Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'u_sys_clk'
 Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/verify_RAM/verify_RAM/verify_RAM_in_context.xdc] for cell 'u_verify_RAM'
 Finished Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/verify_RAM/verify_RAM/verify_RAM_in_context.xdc] for cell 'u_verify_RAM'
 Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
 Finished Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
-Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'u_sys_clk'
-Finished Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'u_sys_clk'
+Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM/test_ROM_in_context.xdc] for cell 'u_test_ROM'
+Finished Parsing XDC File [f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/test_ROM/test_ROM/test_ROM_in_context.xdc] for cell 'u_test_ROM'
 Parsing XDC File [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/constrs_1/new/xdc.xdc]
 Finished Parsing XDC File [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/constrs_1/new/xdc.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1779.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1389.344 ; gain = 0.000
-WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_ila' at clock pin 'clk' is different from the actual clock period '6.667', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_test_ROM' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_verify_RAM' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 1779.082 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_ila' at clock pin 'clk' is different from the actual clock period '8.696', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_test_ROM' at clock pin 'clka' is different from the actual clock period '8.696', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_verify_RAM' at clock pin 'clka' is different from the actual clock period '8.696', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.512 ; gain = 282.613
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1787.996 ; gain = 681.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.512 ; gain = 282.613
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_osc. (constraint file  f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_osc. (constraint file  f:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.gen/sources_1/ip/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
-Applied set_property KEEP_HIERARCHY = SOFT for u_test_ROM. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_verify_RAM. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_ila. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_sys_clk. (constraint file  auto generated constraint).
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.512 ; gain = 282.613
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1787.996 ; gain = 681.531
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
 INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'top', re-encoding will not be performed
@@ -199,42 +532,43 @@ INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'top', re-
                  ST_DONE |                              111 |                              111
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1393.512 ; gain = 282.613
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   33 Bit       Adders := 4     
-	   3 Input   32 Bit       Adders := 4     
-	   2 Input   32 Bit       Adders := 4     
-	   2 Input    6 Bit       Adders := 2     
+	   2 Input   33 Bit       Adders := 32    
+	   3 Input   32 Bit       Adders := 64    
+	   2 Input   32 Bit       Adders := 32    
+	   2 Input    6 Bit       Adders := 4     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 96    
 +---Registers : 
-	               32 Bit    Registers := 96    
-	               16 Bit    Registers := 64    
+	               32 Bit    Registers := 768   
+	               16 Bit    Registers := 66    
 	                6 Bit    Registers := 4     
-	                4 Bit    Registers := 12    
-	                1 Bit    Registers := 39    
+	                4 Bit    Registers := 96    
+	                1 Bit    Registers := 263   
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 80    
-	   6 Input   32 Bit        Muxes := 4     
-	   2 Input   16 Bit        Muxes := 385   
-	   2 Input    6 Bit        Muxes := 7     
+	   2 Input   32 Bit        Muxes := 736   
+	   6 Input   32 Bit        Muxes := 32    
+	   2 Input   16 Bit        Muxes := 3972  
+	   6 Input   16 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 36    
 	   6 Input    6 Bit        Muxes := 4     
-	   9 Input    4 Bit        Muxes := 4     
-	   2 Input    4 Bit        Muxes := 20    
-	   6 Input    3 Bit        Muxes := 5     
+	   9 Input    4 Bit        Muxes := 32    
+	   2 Input    4 Bit        Muxes := 160   
+	   6 Input    3 Bit        Muxes := 33    
 	   2 Input    3 Bit        Muxes := 3     
-	   4 Input    2 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 573   
-	   8 Input    1 Bit        Muxes := 5     
-	   7 Input    1 Bit        Muxes := 6     
-	   9 Input    1 Bit        Muxes := 5     
-	   6 Input    1 Bit        Muxes := 15    
-	   3 Input    1 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 4998  
+	   8 Input    1 Bit        Muxes := 33    
+	   7 Input    1 Bit        Muxes := 34    
+	   9 Input    1 Bit        Muxes := 33    
+	   6 Input    1 Bit        Muxes := 71    
+	   3 Input    1 Bit        Muxes := 32    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -250,16 +584,316 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Why this net has no driver: _order_recur <const1>
-Why this net has no driver: _order_recur <const0>
-Why this net has no driver: _order_recur <const1>
-Why this net has no driver: _order_recur <const0>
-Why this net has no driver: _order_recur <const1>
-Why this net has no driver: _order_recur <const0>
-Why this net has no driver: _order_recur <const1>
-Why this net has no driver: _order_recur <const0>
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__5 is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[31]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[30]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[28]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[29]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[24]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[25]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[26]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[27]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[22]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[23]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[16]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[17]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[18]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[19]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[20]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_core21/ex_wb_mem_rdata_reg[21]' (FDC) to 'u_core21/ex_wb_mem_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[31]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[30]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[28]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[29]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[24]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[25]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[26]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[27]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[22]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[23]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[16]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[17]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[18]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[19]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[20]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_core22/ex_wb_mem_rdata_reg[21]' (FDC) to 'u_core22/ex_wb_mem_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[31]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[30]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[28]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[29]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[24]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[25]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[26]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[27]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[22]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[23]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[16]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[17]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[18]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[19]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[20]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_core23/ex_wb_mem_rdata_reg[21]' (FDC) to 'u_core23/ex_wb_mem_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[31]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[30]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[28]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[29]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[24]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[25]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[26]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[27]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[22]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[23]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[16]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[17]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[18]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[19]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[20]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_core25/ex_wb_mem_rdata_reg[21]' (FDC) to 'u_core25/ex_wb_mem_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[31]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[30]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[28]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[29]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[24]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[25]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[26]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[27]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[22]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[23]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[16]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[17]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[18]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[19]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[20]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_core26/ex_wb_mem_rdata_reg[21]' (FDC) to 'u_core26/ex_wb_mem_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[10]' (FDC) to 'u_core21/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[11]' (FDC) to 'u_core21/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[9]' (FDC) to 'u_core21/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[8]' (FDC) to 'u_core21/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[7]' (FDC) to 'u_core21/if_id_instr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[28]' (FDC) to 'u_core21/if_id_instr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[30]' (FDP) to 'u_core21/if_id_instr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core21/if_id_instr_reg[31]' (FDP) to 'u_core21/if_id_instr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[10]' (FDC) to 'u_core22/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[11]' (FDC) to 'u_core22/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[9]' (FDC) to 'u_core22/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[8]' (FDC) to 'u_core22/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[7]' (FDC) to 'u_core22/if_id_instr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[28]' (FDC) to 'u_core22/if_id_instr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[30]' (FDP) to 'u_core22/if_id_instr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core22/if_id_instr_reg[31]' (FDP) to 'u_core22/if_id_instr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_core23/if_id_instr_reg[10]' (FDC) to 'u_core23/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core23/if_id_instr_reg[11]' (FDC) to 'u_core23/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core23/if_id_instr_reg[9]' (FDC) to 'u_core23/if_id_instr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_core23/if_id_instr_reg[8]' (FDC) to 'u_core23/if_id_instr_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/\if_id_instr_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_core21/\if_id_instr_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/\if_id_instr_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_core22/\if_id_instr_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/\if_id_instr_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_core23/\if_id_instr_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/\if_id_instr_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_core25/\if_id_instr_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/\if_id_instr_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_core26/\if_id_instr_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/\ex_wb_wa_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/\ex_wb_wa_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/\ex_wb_wa_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/\ex_wb_wa_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/\ex_wb_wa_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core22/u_reg_file/\regs_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core23/u_reg_file/\regs_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core25/u_reg_file/\regs_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core26/u_reg_file/\regs_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_core21/u_reg_file/\regs_reg[2][11] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__12 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module control_unit__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module control_unit__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module control_unit__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module control_unit__24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module operand2_decode__25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module operand2_decode__25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module operand2_decode__25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module operand2_decode__25 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1488.973 ; gain = 378.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:02 ; elapsed = 00:04:33 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -277,6 +911,30 @@ ROM: Preliminary Mapping	Report
 |mcu_top     | p_0_out    | 4096x15       | LUT            | 
 |mcu_top     | p_0_out    | 4096x15       | LUT            | 
 |mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x15       | LUT            | 
+|mcu_top     | p_0_out    | 4096x14       | LUT            | 
+|mcu_top     | p_0_out    | 4096x14       | LUT            | 
+|mcu_top     | p_0_out    | 4096x12       | LUT            | 
+|mcu_top     | p_0_out    | 4096x12       | LUT            | 
 +------------+------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -286,28 +944,22 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1488.973 ; gain = 378.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:08 ; elapsed = 00:04:38 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Finished Timing Optimization : Time (s): cpu = 00:04:14 ; elapsed = 00:04:45 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Finished Technology Mapping : Time (s): cpu = 00:04:36 ; elapsed = 00:05:10 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -316,37 +968,19 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Finished IO Insertion : Time (s): cpu = 00:04:42 ; elapsed = 00:05:16 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1820.965 ; gain = 710.066
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1820.965 ; gain = 710.066
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:42 ; elapsed = 00:05:16 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1820.965 ; gain = 710.066
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:49 ; elapsed = 00:05:23 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -370,41 +1004,48 @@ Report Cell Usage:
 |2     |sys_clk    |     1|
 |3     |test_ROM   |     1|
 |4     |verify_RAM |     1|
-|5     |CARRY4     |   101|
-|6     |LUT1       |     8|
-|7     |LUT2       |   874|
-|8     |LUT3       |   654|
-|9     |LUT4       |   225|
-|10    |LUT5       |   969|
-|11    |LUT6       |  4433|
-|12    |MUXF7      |   689|
-|13    |MUXF8      |   263|
-|14    |FDCE       |  2390|
-|15    |FDPE       |    16|
+|5     |CARRY4     |   773|
+|6     |LUT1       |   132|
+|7     |LUT2       |  9255|
+|8     |LUT3       | 22814|
+|9     |LUT4       |  2107|
+|10    |LUT5       |  7179|
+|11    |LUT6       | 28705|
+|12    |MUXF7      |  4117|
+|13    |MUXF8      |  2048|
+|14    |FDCE       |  8848|
+|15    |FDPE       |    96|
 |16    |IBUF       |     1|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:49 ; elapsed = 00:05:23 . Memory (MB): peak = 1798.293 ; gain = 691.828
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 1820.965 ; gain = 583.824
-Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1820.965 ; gain = 710.066
+Synthesis finished with 0 errors, 0 critical warnings and 124 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:27 ; elapsed = 00:05:16 . Memory (MB): peak = 1798.293 ; gain = 526.598
+Synthesis Optimization Complete : Time (s): cpu = 00:04:49 ; elapsed = 00:05:24 . Memory (MB): peak = 1798.293 ; gain = 691.828
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1832.625 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1053 Unisim elements for replacement
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'state_reg[2]' of module 'FDCE'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'state_reg[1]' of module 'FDCE'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'state_reg[0]' of module 'FDCE'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.693 . Memory (MB): peak = 1798.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6938 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1832.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1807.973 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-61 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+352 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1832.625 ; gain = 721.727
+synth_design: Time (s): cpu = 00:05:04 ; elapsed = 00:05:41 . Memory (MB): peak = 1807.973 ; gain = 701.508
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:36 . Memory (MB): peak = 1807.973 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jul  4 13:10:10 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  5 16:34:37 2026...

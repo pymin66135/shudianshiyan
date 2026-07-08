@@ -2,30 +2,167 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Jul  4 13:49:24 2026
-# Process ID: 4676
+# Start of session at: Sun Jul  5 15:30:38 2026
+# Process ID: 21284
 # Current directory: F:/FPGA/shudianshiyan/simple_mcu_test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26996 F:\FPGA\shudianshiyan\simple_mcu_test\simple_mcu_test.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11516 F:\FPGA\shudianshiyan\simple_mcu_test\simple_mcu_test.xpr
 # Log file: F:/FPGA/shudianshiyan/simple_mcu_test/vivado.log
 # Journal file: F:/FPGA/shudianshiyan/simple_mcu_test\vivado.jou
-#-----------------------------------------------------------
-start_gui
+#----------------------------------------------------------start_gui
 open_project F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.xpr
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
-set_property PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
-set_property FULL_PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
-current_hw_device [get_hw_devices xc7k160t_0]
-refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 update_compile_order -fileset sources_1
-reset_run impl_1 -prev_step 
+1
+set_property -dict [list CONFIG.Coe_File {C:/Users/22790/Desktop/sort_input_103.coe}] [get_ips test_ROM]
+generate_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+catch { config_ip_cache -export [get_ips -all test_ROM] }
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -no_script -sync -force -quiet
+reset_run test_ROM_synth_1
+launch_runs test_ROM_synth_1 -jobs 8
+wait_on_run test_ROM_synth_1
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+open_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-save_wave_config {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+set_property PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.runs/impl_1/top.ltx} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 close_hw_manager
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_mcu_top.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top_v5_32core [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+close_design
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+current_wave_config {tb_top_v35_simple_behav.wcfg}
+add_wave {{/tb_top_v5_32core/clk_osc}} 
+current_wave_config {tb_top_v35_simple_behav.wcfg}
+add_wave {{/tb_top_v5_32core/dut/state}} 
+current_wave_config {tb_top_v35_simple_behav.wcfg}
+add_wave {{/tb_top_v5_32core/dut/test_vector_in}} 
+current_wave_config {tb_top_v35_simple_behav.wcfg}
+add_wave {{/tb_top_v5_32core/dut/verify_vector_out_a}} 
+current_wave_config {tb_top_v35_simple_behav.wcfg}
+add_wave {{/tb_top_v5_32core/dut/cnt_test}} 
+restart
+run 5000 ns
+save_wave_config {F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg}
+close_sim
+close_design
+set_property -dict [list CONFIG.Coe_File {F:/FPGA/shudianshiyan/src/pym/mcu_v0_arm_a32_single_cycle/mcu_v0_arm_a32_single_cycle/coe/test_rom.coe}] [get_ips test_ROM]
+generate_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+catch { config_ip_cache -export [get_ips -all test_ROM] }
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -no_script -sync -force -quiet
+reset_run test_ROM_synth_1
+launch_runs test_ROM_synth_1 -jobs 8
+wait_on_run test_ROM_synth_1
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+run 5000 ns
+reset_project
+close_sim
+reset_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+export_ip_user_files -of_objects  [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sys_clk] F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+export_ip_user_files -of_objects  [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset test_ROM] F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+reset_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci]
+export_ip_user_files -of_objects  [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset verify_RAM] F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci]
+update_compile_order -fileset sources_1
+reset_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/ila_0/ila_0.xci]
+export_ip_user_files -of_objects  [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/ila_0/ila_0.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset ila_0] F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/ila_0/ila_0.xci]
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sim_1
+generate_target all [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/ila_0/ila_0.xci]
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/ila_0/ila_0.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci]
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/verify_RAM/verify_RAM.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+run 5000 ns
+reset_run impl_1 -prev_step 
+close_sim
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+run 5000 ns
+close_sim
+reset_target all [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+export_ip_user_files -of_objects  [get_files  F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset test_ROM] F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+generate_target all [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+export_ip_user_files -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci] -directory F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files -ipstatic_source_dir F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/modelsim} {questa=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/questa} {riviera=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/riviera} {activehdl=F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset test_ROM
+set_property top test_ROM [get_fileset test_ROM]
+move_files -fileset [get_fileset test_ROM] [get_files -of_objects [get_fileset sources_1] F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.srcs/sources_1/ip/test_ROM/test_ROM.xci]
+launch_run test_ROM_synth_1
+wait_on_run test_ROM_synth_1
+
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+update_compile_order -fileset sim_1
+run 5000 ns
+restart
+run 5000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
@@ -35,58 +172,41 @@ set_property FULL_PROBES.FILE {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_
 current_hw_device [get_hw_devices xc7k160t_0]
 refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-get_hw_ilas
-set_property TRIGGER_COMPARE_VALUE eq3'h1 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'h2 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq20'b0000_0000_0000_1110_0101 [get_hw_probes cnt_test -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'bXXX [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'hX [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq20'hX_XXXX [get_hw_probes cnt_test -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}] -trigger_now
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'h4 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'h6 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'u4 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'u7 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'b111 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'h7 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE eq3'h4 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE {eq3'h5 eq3'hX} [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property TRIGGER_COMPARE_VALUE {eq3'h5 eq3'h6} [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
-set_property CONTROL.DATA_DEPTH 16384 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]]
+startgroup 
+set_property CONTROL.DATA_DEPTH 1024 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+set_property CONTROL.TRIGGER_POSITION 1023 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
+endgroup
+set_property CONTROL.DATA_DEPTH 8192 [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila"}]
 save_wave_config {F:/FPGA/shudianshiyan/simple_mcu_test/simple_mcu_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+close_design
+close_sim
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+run 5000 ns
+close_sim
+launch_simulation
+open_wave_config F:/FPGA/shudianshiyan/simple_mcu_test/tb_top_v35_simple_behav.wcfg
+source tb_top_v5_32core.tcl
+run 5000 ns
+close_sim
+launch_simulation

@@ -19,9 +19,9 @@
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="u_ila" gui_info="">
-      <Properties Property="CONTROL.DATA_DEPTH" value="16384"/>
+      <Properties Property="CONTROL.DATA_DEPTH" value="8192"/>
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="OR"/>
-      <Properties Property="CONTROL.TRIGGER_POSITION" value="8191"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="1023"/>
       <Properties Property="CONTROL.WINDOW_COUNT" value="1"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
@@ -413,7 +413,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq3&apos;h5"/>
+        <Option Id="COMPARE_VALUE.0" value="eq3&apos;h6"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -424,7 +424,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq3&apos;h5"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq3&apos;h6"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
         <Option Id="ENUM.ST_DONE" value="eq3&apos;b111"/>
         <Option Id="ENUM.ST_IDLE" value="eq3&apos;b000"/>

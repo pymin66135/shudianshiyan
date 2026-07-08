@@ -1,41 +1,9 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto bdc1c0e0f0d2487eb4e3d79c632cb8d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_v35_simple_behav xil_defaultlib.tb_top_v35_simple xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto bdc1c0e0f0d2487eb4e3d79c632cb8d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_v5_32core_behav xil_defaultlib.tb_top_v5_32core xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=19.87...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.sys_clk_clk_wiz
-Compiling module xil_defaultlib.sys_clk
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
-Compiling module xil_defaultlib.test_ROM
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
-Compiling module xil_defaultlib.verify_RAM
-Compiling module xil_defaultlib.global_rf_4w4r
-Compiling module xil_defaultlib.pc_reg
-Compiling module xil_defaultlib.control_unit
-Compiling module xil_defaultlib.reg_file
-Compiling module xil_defaultlib.operand2_decode
-Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.cond_unit
-Compiling module xil_defaultlib.mcu_top(INSTR_ROM_ADDR_WIDTH=12,...
-Compiling module xil_defaultlib.mcu_top(INSTR_ROM_ADDR_WIDTH=12,...
-Compiling module xil_defaultlib.mcu_top(INSTR_ROM_ADDR_WIDTH=12,...
-Compiling module xil_defaultlib.mcu_top(INSTR_ROM_ADDR_WIDTH=12,...
-Compiling module xil_defaultlib.cnt_test
-Compiling module xil_defaultlib.ila_0
-Compiling module xil_defaultlib.top_default
-Compiling module xil_defaultlib.tb_top_v35_simple
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_top_v35_simple_behav
+ERROR: [VRFC 10-2991] 'mem' is not declared under prefix 'u_test_ROM' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/tb/tb_top_v5_32core.v:131]
+ERROR: [VRFC 10-2991] 'mem' is not declared under prefix 'u_test_ROM' [F:/FPGA/shudianshiyan/src/pym/mcu_v6/tb/tb_top_v5_32core.v:135]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
